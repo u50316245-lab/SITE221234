@@ -48,7 +48,7 @@ function FL.start()
 	fill.Shadows = false
 	fill.Parent = part
 
-	local api = { part = part, forceFlicker = 0, disabled = false }
+	local api = { part = part, forceFlicker = 0, disabled = false, flickerScale = 1 }
 	local current = workspace.CurrentCamera.CFrame
 	local swayT = 0
 	local flickerUntil = 0
@@ -128,6 +128,7 @@ function FL.start()
 			flickerChance += (20 - battery) / 20 * 0.06
 		end
 		flickerChance += monsterNear * 0.18 + api.forceFlicker
+		flickerChance *= api.flickerScale
 		local now = os.clock()
 		if now > flickerUntil then
 			if math.random() < flickerChance then
