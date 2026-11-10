@@ -13,6 +13,7 @@ local Remotes = require(script.Parent.Remotes)
 local Shared = game:GetService("ReplicatedStorage"):WaitForChild("Shared")
 local Config = require(Shared.Config)
 local BattlePass = require(Shared.BattlePass)
+local Settings = require(Shared.Settings)
 
 local DataService = {}
 DataService.passChecker = nil -- function(player) -> table of pass flags (ставит ShopService)
@@ -45,7 +46,7 @@ local function defaults()
 		receipts = {},
 		receiptOrder = {},
 		savedAt = 0,
-		settings = { sensitivity = 1, music = 0.6 },
+		settings = table.clone(Settings.Defaults),
 	}
 end
 
@@ -93,7 +94,7 @@ local function snapshot(player, data)
 		revives = data.revives,
 		stats = data.stats,
 		passes = passes,
-		settings = data.settings,
+		settings = Settings.sanitize(data.settings),
 	}
 end
 
@@ -227,6 +228,24 @@ function DataService.start()
 		end
 		return snapshot(player, data)
 	end
+
+	-- настройки клиента: чистим по схеме и ограничиваем частоту
+	local lastSettingsSave = {}
+	Remotes.SaveSettings.OnServerEvent:Connect(function(player, input)
+		local data = profiles[player]
+		if not data or type(input) ~= "table" then
+			return
+		end
+		local now = os.clock()
+		if lastSettingsSave[player] and now - lastSettingsSave[player] < 0.3 then
+			return
+		end
+		lastSettingsSave[player] = now
+		data.settings = Settings.sanitize(input)
+	end)
+	Players.PlayerRemoving:Connect(function(player)
+		lastSettingsSave[player] = nil
+	end)
 
 	Players.PlayerAdded:Connect(loadPlayer)
 	for _, p in ipairs(Players:GetPlayers()) do
