@@ -301,39 +301,39 @@
 <Item class="Part" referent="RBX00000130"><Properties><string name="Name">Tile</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>38</X><Y>-0.5</Y><Z>20</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>4</X><Y>1</Y><Z>4</Z></Vector3><Color3uint8 name="Color3uint8">4282401858</Color3uint8><token name="Material">800</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
 <Item class="Part" referent="RBX00000131"><Properties><string name="Name">Tile</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>38</X><Y>-0.5</Y><Z>24</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>4</X><Y>1</Y><Z>4</Z></Vector3><Color3uint8 name="Color3uint8">4288057992</Color3uint8><token name="Material">784</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
 <Item class="Part" referent="RBX00000132"><Properties><string name="Name">Tile</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>38</X><Y>-0.5</Y><Z>28</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>4</X><Y>1</Y><Z>4</Z></Vector3><Color3uint8 name="Color3uint8">4282401858</Color3uint8><token name="Material">800</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000133"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>0</X><Y>9</Y><Z>30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>82</X><Y>18</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000134"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>0</X><Y>1.6</Y><Z>29.9</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>82</X><Y>3.2</Y><Z>0.3</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">272</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000135"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-40.5</X><Y>9</Y><Z>0</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>18</Y><Z>60</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000136"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-39.9</X><Y>1.6</Y><Z>0</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>0.3</X><Y>3.2</Y><Z>60</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">272</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000137"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>40.5</X><Y>9</Y><Z>0</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>18</Y><Z>60</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000138"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>39.9</X><Y>1.6</Y><Z>0</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>0.3</X><Y>3.2</Y><Z>60</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">272</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000139"><Properties><string name="Name">Ceiling</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>0</X><Y>18.5</Y><Z>0</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>82</X><Y>1</Y><Z>62</Z></Vector3><Color3uint8 name="Color3uint8">4288059022</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX0000013A"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-34.5</X><Y>9</Y><Z>-30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>11</X><Y>18</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX0000013B"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-34.5</X><Y>1.6</Y><Z>-29.9</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>11</X><Y>3.2</Y><Z>0.3</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">272</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX0000013C"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-12</X><Y>9</Y><Z>-30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>18</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX0000013D"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-12</X><Y>1.6</Y><Z>-29.9</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>3.2</Y><Z>0.3</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">272</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX0000013E"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>12</X><Y>9</Y><Z>-30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>18</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX0000013F"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>12</X><Y>1.6</Y><Z>-29.9</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>3.2</Y><Z>0.3</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">272</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000140"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>34.5</X><Y>9</Y><Z>-30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>11</X><Y>18</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000141"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>34.5</X><Y>1.6</Y><Z>-29.9</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>11</X><Y>3.2</Y><Z>0.3</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">272</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000142"><Properties><string name="Name">Lintel</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-24</X><Y>15</Y><Z>-30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000143"><Properties><string name="Name">Lintel</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>0</X><Y>15</Y><Z>-30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000144"><Properties><string name="Name">Lintel</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>24</X><Y>15</Y><Z>-30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000133"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>0</X><Y>9</Y><Z>30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>82</X><Y>18</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000134"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>0</X><Y>1.6</Y><Z>29.9</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>82</X><Y>3.2</Y><Z>0.3</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000135"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-40.5</X><Y>9</Y><Z>0</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>18</Y><Z>60</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000136"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-39.9</X><Y>1.6</Y><Z>0</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>0.3</X><Y>3.2</Y><Z>60</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000137"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>40.5</X><Y>9</Y><Z>0</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>18</Y><Z>60</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000138"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>39.9</X><Y>1.6</Y><Z>0</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>0.3</X><Y>3.2</Y><Z>60</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000139"><Properties><string name="Name">Ceiling</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>0</X><Y>18.5</Y><Z>0</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>82</X><Y>1</Y><Z>62</Z></Vector3><Color3uint8 name="Color3uint8">4288059022</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX0000013A"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-34.5</X><Y>9</Y><Z>-30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>11</X><Y>18</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX0000013B"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-34.5</X><Y>1.6</Y><Z>-29.9</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>11</X><Y>3.2</Y><Z>0.3</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX0000013C"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-12</X><Y>9</Y><Z>-30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>18</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX0000013D"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-12</X><Y>1.6</Y><Z>-29.9</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>3.2</Y><Z>0.3</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX0000013E"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>12</X><Y>9</Y><Z>-30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>18</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX0000013F"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>12</X><Y>1.6</Y><Z>-29.9</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>3.2</Y><Z>0.3</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000140"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>34.5</X><Y>9</Y><Z>-30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>11</X><Y>18</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000141"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>34.5</X><Y>1.6</Y><Z>-29.9</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>11</X><Y>3.2</Y><Z>0.3</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000142"><Properties><string name="Name">Lintel</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-24</X><Y>15</Y><Z>-30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000143"><Properties><string name="Name">Lintel</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>0</X><Y>15</Y><Z>-30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000144"><Properties><string name="Name">Lintel</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>24</X><Y>15</Y><Z>-30.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
 <Item class="Part" referent="RBX00000252"><Properties><string name="Name">Floor</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-24</X><Y>-0.5</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>10</X><Y>1</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280821284</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000253"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-29.5</X><Y>6</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>12</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280822824</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000254"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-18.5</X><Y>6</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>12</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280822824</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000255"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-24</X><Y>6</Y><Z>-43.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>12</X><Y>12</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4279505940</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000256"><Properties><string name="Name">Ceiling</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-24</X><Y>12.5</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>12</X><Y>1</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280163870</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000253"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-29.5</X><Y>6</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>12</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280822824</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000254"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-18.5</X><Y>6</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>12</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280822824</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000255"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-24</X><Y>6</Y><Z>-43.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>12</X><Y>12</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4279505940</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000256"><Properties><string name="Name">Ceiling</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-24</X><Y>12.5</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>12</X><Y>1</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280163870</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
 <Item class="Part" referent="RBX00000280"><Properties><string name="Name">Floor</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>0</X><Y>-0.5</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>10</X><Y>1</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280821284</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000281"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-5.5</X><Y>6</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>12</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280822824</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000282"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>5.5</X><Y>6</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>12</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280822824</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000283"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>0</X><Y>6</Y><Z>-43.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>12</X><Y>12</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4279505940</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX00000284"><Properties><string name="Name">Ceiling</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>0</X><Y>12.5</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>12</X><Y>1</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280163870</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000281"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>-5.5</X><Y>6</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>12</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280822824</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000282"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>5.5</X><Y>6</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>12</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280822824</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000283"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>0</X><Y>6</Y><Z>-43.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>12</X><Y>12</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4279505940</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX00000284"><Properties><string name="Name">Ceiling</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>0</X><Y>12.5</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>12</X><Y>1</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280163870</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
 <Item class="Part" referent="RBX000002AE"><Properties><string name="Name">Floor</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>24</X><Y>-0.5</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>10</X><Y>1</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280821284</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX000002AF"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>18.5</X><Y>6</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>12</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280822824</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX000002B0"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>29.5</X><Y>6</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>12</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280822824</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX000002B1"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>24</X><Y>6</Y><Z>-43.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>12</X><Y>12</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4279505940</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX000002B2"><Properties><string name="Name">Ceiling</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>24</X><Y>12.5</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>12</X><Y>1</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280163870</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX000002AF"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>18.5</X><Y>6</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>12</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280822824</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX000002B0"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>29.5</X><Y>6</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>12</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280822824</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX000002B1"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>24</X><Y>6</Y><Z>-43.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>12</X><Y>12</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4279505940</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX000002B2"><Properties><string name="Name">Ceiling</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>24</X><Y>12.5</Y><Z>-37</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>12</X><Y>1</Y><Z>12</Z></Vector3><Color3uint8 name="Color3uint8">4280163870</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
 <Item class="Part" referent="RBX00000399"><Properties><string name="Name">Tile</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>196</X><Y>-0.5</Y><Z>-42</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>4</X><Y>1</Y><Z>4</Z></Vector3><Color3uint8 name="Color3uint8">4288057992</Color3uint8><token name="Material">784</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
 <Item class="Part" referent="RBX0000039A"><Properties><string name="Name">Tile</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>196</X><Y>-0.5</Y><Z>-38</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>4</X><Y>1</Y><Z>4</Z></Vector3><Color3uint8 name="Color3uint8">4282401858</Color3uint8><token name="Material">800</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
 <Item class="Part" referent="RBX0000039B"><Properties><string name="Name">Tile</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>196</X><Y>-0.5</Y><Z>-34</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>4</X><Y>1</Y><Z>4</Z></Vector3><Color3uint8 name="Color3uint8">4288057992</Color3uint8><token name="Material">784</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
@@ -397,15 +397,15 @@
 <Item class="Part" referent="RBX000003D5"><Properties><string name="Name">Tile</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>204</X><Y>-0.5</Y><Z>30</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>4</X><Y>1</Y><Z>4</Z></Vector3><Color3uint8 name="Color3uint8">4286084202</Color3uint8><token name="Material">800</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
 <Item class="Part" referent="RBX000003D6"><Properties><string name="Name">Tile</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>204</X><Y>-0.5</Y><Z>34</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>4</X><Y>1</Y><Z>4</Z></Vector3><Color3uint8 name="Color3uint8">4282401858</Color3uint8><token name="Material">800</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
 <Item class="Part" referent="RBX000003D7"><Properties><string name="Name">Tile</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>204</X><Y>-0.5</Y><Z>38</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>4</X><Y>1</Y><Z>4</Z></Vector3><Color3uint8 name="Color3uint8">4288057992</Color3uint8><token name="Material">784</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX000003D8"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>200</X><Y>6.5</Y><Z>40.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>13</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX000003D9"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>200</X><Y>1.6</Y><Z>39.9</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>3.2</Y><Z>0.3</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">272</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX000003DA"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>200</X><Y>6.5</Y><Z>-44.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>13</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX000003DB"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>200</X><Y>1.6</Y><Z>-43.9</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>3.2</Y><Z>0.3</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">272</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX000003DC"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>193.5</X><Y>6.5</Y><Z>-2</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>13</Y><Z>84</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX000003DD"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>194.1</X><Y>1.6</Y><Z>-2</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>0.3</X><Y>3.2</Y><Z>84</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">272</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX000003DE"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>206.5</X><Y>6.5</Y><Z>-2</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>13</Y><Z>84</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX000003DF"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>205.9</X><Y>1.6</Y><Z>-2</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>0.3</X><Y>3.2</Y><Z>84</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">272</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
-<Item class="Part" referent="RBX000003E0"><Properties><string name="Name">Ceiling</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>200</X><Y>13.5</Y><Z>-2</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>1</Y><Z>86</Z></Vector3><Color3uint8 name="Color3uint8">4288059022</Color3uint8><token name="Material">816</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX000003D8"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>200</X><Y>6.5</Y><Z>40.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>13</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX000003D9"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>200</X><Y>1.6</Y><Z>39.9</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>3.2</Y><Z>0.3</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX000003DA"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>200</X><Y>6.5</Y><Z>-44.5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>13</Y><Z>1</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX000003DB"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>200</X><Y>1.6</Y><Z>-43.9</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>3.2</Y><Z>0.3</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX000003DC"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>193.5</X><Y>6.5</Y><Z>-2</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>13</Y><Z>84</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX000003DD"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>194.1</X><Y>1.6</Y><Z>-2</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>0.3</X><Y>3.2</Y><Z>84</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX000003DE"><Properties><string name="Name">Wall</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>206.5</X><Y>6.5</Y><Z>-2</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>1</X><Y>13</Y><Z>84</Z></Vector3><Color3uint8 name="Color3uint8">4285956212</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX000003DF"><Properties><string name="Name">Wainscot</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>205.9</X><Y>1.6</Y><Z>-2</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>0.3</X><Y>3.2</Y><Z>84</Z></Vector3><Color3uint8 name="Color3uint8">4282012744</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
+<Item class="Part" referent="RBX000003E0"><Properties><string name="Name">Ceiling</string><bool name="Anchored">true</bool><bool name="CanCollide">true</bool><bool name="CanTouch">false</bool><bool name="CanQuery">true</bool><CoordinateFrame name="CFrame"><X>200</X><Y>13.5</Y><Z>-2</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>14</X><Y>1</Y><Z>86</Z></Vector3><Color3uint8 name="Color3uint8">4288059022</Color3uint8><token name="Material">2310</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
 </Item>
 <Item class="Folder" referent="RBX00000004"><Properties><string name="Name">Decor</string></Properties><Item class="Part" referent="RBX00000145"><Properties><string name="Name">Housing</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">false</bool><CoordinateFrame name="CFrame"><X>-28</X><Y>17.84</Y><Z>-14</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>5.4</X><Y>0.3</Y><Z>1.5</Z></Vector3><Color3uint8 name="Color3uint8">4281479728</Color3uint8><token name="Material">1088</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
 <Item class="Part" referent="RBX00000148"><Properties><string name="Name">Housing</string><bool name="Anchored">true</bool><bool name="CanCollide">false</bool><bool name="CanTouch">false</bool><bool name="CanQuery">false</bool><CoordinateFrame name="CFrame"><X>-28</X><Y>17.84</Y><Z>6</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Vector3 name="size"><X>5.4</X><Y>0.3</Y><Z>1.5</Z></Vector3><Color3uint8 name="Color3uint8">4281479728</Color3uint8><token name="Material">1088</token><float name="Transparency">0</float><float name="Reflectance">0</float><bool name="CastShadow">true</bool><token name="TopSurface">0</token><token name="BottomSurface">0</token><bool name="Massless">false</bool></Properties></Item>
@@ -1767,10 +1767,11 @@
 </Item>
 </Item>
 </Item>
-<Item class="Lighting" referent="RBX000006FD"><Properties><string name="Name">Lighting</string><token name="Technology">4</token><Color3 name="Ambient"><R>0.0706</R><G>0.0588</G><B>0.0667</B></Color3><Color3 name="OutdoorAmbient"><R>0.0784</R><G>0.0863</G><B>0.1176</B></Color3><float name="Brightness">0.35</float><string name="TimeOfDay">00:30:00</string><bool name="GlobalShadows">true</bool><float name="EnvironmentDiffuseScale">0.25</float><float name="EnvironmentSpecularScale">0.7</float><float name="ShadowSoftness">0.2</float><float name="ExposureCompensation">-0.15</float><Color3 name="FogColor"><R>0.0392</R><G>0.0392</G><B>0.0471</B></Color3><float name="FogStart">0</float><float name="FogEnd">400</float></Properties><Item class="Atmosphere" referent="RBX000006FE"><Properties><string name="Name">Atmosphere</string><float name="Density">0.3</float><float name="Offset">0.1</float><Color3 name="Color"><R>0.2353</R><G>0.2431</G><B>0.2824</B></Color3><Color3 name="Decay"><R>0.1098</R><G>0.0863</G><B>0.102</B></Color3><float name="Glare">0</float><float name="Haze">2</float></Properties></Item>
-<Item class="ColorCorrectionEffect" referent="RBX000006FF"><Properties><string name="Name">Grade</string><float name="Brightness">-0.02</float><float name="Contrast">0.2</float><float name="Saturation">-0.38</float><Color3 name="TintColor"><R>0.8941</R><G>0.9176</G><B>0.949</B></Color3><bool name="Enabled">true</bool></Properties></Item>
-<Item class="BloomEffect" referent="RBX00000700"><Properties><string name="Name">Bloom</string><float name="Intensity">0.7</float><float name="Size">28</float><float name="Threshold">1.3</float><bool name="Enabled">true</bool></Properties></Item>
+<Item class="Lighting" referent="RBX000006FD"><Properties><string name="Name">Lighting</string><token name="Technology">4</token><Color3 name="Ambient"><R>0.0706</R><G>0.0588</G><B>0.0667</B></Color3><Color3 name="OutdoorAmbient"><R>0.0784</R><G>0.0863</G><B>0.1176</B></Color3><float name="Brightness">0.35</float><string name="TimeOfDay">00:30:00</string><bool name="GlobalShadows">true</bool><float name="EnvironmentDiffuseScale">0.25</float><float name="EnvironmentSpecularScale">0.85</float><float name="ShadowSoftness">0.14</float><float name="ExposureCompensation">-0.15</float><Color3 name="FogColor"><R>0.0392</R><G>0.0392</G><B>0.0471</B></Color3><float name="FogStart">0</float><float name="FogEnd">400</float></Properties><Item class="Atmosphere" referent="RBX000006FE"><Properties><string name="Name">Atmosphere</string><float name="Density">0.3</float><float name="Offset">0.1</float><Color3 name="Color"><R>0.2353</R><G>0.2431</G><B>0.2824</B></Color3><Color3 name="Decay"><R>0.1098</R><G>0.0863</G><B>0.102</B></Color3><float name="Glare">0</float><float name="Haze">2</float></Properties></Item>
+<Item class="ColorCorrectionEffect" referent="RBX000006FF"><Properties><string name="Name">Grade</string><float name="Brightness">0</float><float name="Contrast">0.22</float><float name="Saturation">-0.3</float><Color3 name="TintColor"><R>0.9412</R><G>0.8941</G><B>0.8863</B></Color3><bool name="Enabled">true</bool></Properties></Item>
+<Item class="BloomEffect" referent="RBX00000700"><Properties><string name="Name">Bloom</string><float name="Intensity">0.85</float><float name="Size">30</float><float name="Threshold">1.15</float><bool name="Enabled">true</bool></Properties></Item>
 <Item class="Sky" referent="RBX00000701"><Properties><string name="Name">Sky</string><int name="StarCount">400</int><bool name="CelestialBodiesShown">false</bool></Properties></Item>
+<Item class="DepthOfFieldEffect" referent="RBXP13AAA000010"><Properties><string name="Name">DepthOfField</string><float name="FarIntensity">0.18</float><float name="FocusDistance">28</float><float name="InFocusRadius">32</float><float name="NearIntensity">0</float><bool name="Enabled">true</bool></Properties></Item>
 </Item>
 <Item class="ReplicatedStorage" referent="RBX000006E7"><Properties><string name="Name">ReplicatedStorage</string></Properties><Item class="Folder" referent="RBX000006E8"><Properties><string name="Name">Shared</string></Properties><Item class="ModuleScript" referent="RBX000006E9"><Properties><string name="Name">BattlePass</string><ProtectedString name="Source"><![CDATA[-- БАТЛПАСС: 30 уровней, бесплатная и премиум дорожки
 local Config = require(script.Parent.Config)
@@ -1922,7 +1923,7 @@ return ClientData
 local Config = {}
 
 Config.GameName = "ПАЛАТА 13"
-Config.Version = "v1.0"
+Config.Version = "v1.1"
 
 -- 1) ID ПЛЕЙСОВ ------------------------------------------------------------
 -- Creator Hub -> твоя игра -> Places. Лобби = стартовый плейс, Больница = второй плейс.
@@ -2022,6 +2023,13 @@ Config.Titles = {
 }
 
 Config.ShowTitlesAboveHead = true -- только в лобби
+
+-- Титульная карточка в начале раунда
+Config.Chapter = {
+	number = "ГЛАВА I",
+	title = "ЗАБРОШЕННЫЙ КОРПУС",
+	objective = "Найди предохранители и запусти генератор. Не попадайся ему на глаза.",
+}
 
 -- 5) НАГРАДЫ ЗА РАУНД -----------------------------------------------------
 Config.Rewards = {
@@ -2471,11 +2479,25 @@ local _ = Players
 return Animator
 ]]></ProtectedString></Properties></Item>
 <Item class="ModuleScript" referent="RBX000006EE"><Properties><string name="Name">Sound</string><ProtectedString name="Source"><![CDATA[-- Проигрывание звуков по ключу из Config.Sounds. Если ID = 0 — тихо пропускаем (без ошибок).
+-- Все звуки раскладываются по SoundGroup (музыка / эмбиент / эффекты / интерфейс),
+-- чтобы громкость из настроек и «глухота» в шкафу работали централизованно.
 local SoundService = game:GetService("SoundService")
+local RunService = game:GetService("RunService")
 local Debris = game:GetService("Debris")
 local Config = require(script.Parent.Config)
 
 local Sound = {}
+
+local GROUP_OF = {
+	MenuMusic = "Music",
+	ChaseSting = "Music",
+	Ambience = "Ambience",
+	LightBuzz = "Ambience",
+	UIHover = "UI",
+	UIClick = "UI",
+	Purchase = "UI",
+}
+local PREFIX = "P13_"
 
 function Sound.id(key)
 	local v = Config.Sounds[key]
@@ -2486,6 +2508,18 @@ function Sound.id(key)
 		return "rbxassetid://" .. tostring(v)
 	end
 	return tostring(v)
+end
+
+function Sound.group(category)
+	local name = PREFIX .. category
+	local g = SoundService:FindFirstChild(name)
+	if not g or not g:IsA("SoundGroup") then
+		g = Instance.new("SoundGroup")
+		g.Name = name
+		g.Volume = 1
+		g.Parent = SoundService
+	end
+	return g
 end
 
 -- создать Sound (не запуская). parent = часть/аттачмент для 3D, nil = 2D
@@ -2500,6 +2534,7 @@ function Sound.make(key, parent, props)
 	s.RollOffMode = Enum.RollOffMode.InverseTapered
 	s.RollOffMinDistance = 8
 	s.RollOffMaxDistance = 90
+	s.SoundGroup = Sound.group(GROUP_OF[key] or "SFX")
 	if props then
 		for k, v in pairs(props) do
 			s[k] = v
@@ -2535,6 +2570,89 @@ function Sound.playAt(key, position, props)
 	a.Parent = workspace.Terrain
 	Debris:AddItem(a, 25)
 	return Sound.play(key, a, props)
+end
+
+-- КЛИЕНТ: громкость групп и приглушение ------------------------------------
+local volumes = {}
+local muffle = 0
+
+local function isOurGroup(inst)
+	return inst:IsA("SoundGroup") and string.sub(inst.Name, 1, #PREFIX) == PREFIX
+end
+
+local function applyGroup(g)
+	local category = string.sub(g.Name, #PREFIX + 1)
+	local v = volumes[category]
+	if v then
+		g.Volume = v
+	end
+	-- в шкафу / при оглушении мир звучит как через стенку; интерфейс не трогаем
+	if category ~= "UI" then
+		local eq = g:FindFirstChild("P13_Muffle")
+		if muffle > 0.001 and not eq then
+			eq = Instance.new("EqualizerSoundEffect")
+			eq.Name = "P13_Muffle"
+			eq.Parent = g
+		end
+		if eq and eq:IsA("EqualizerSoundEffect") then
+			eq.HighGain = -38 * muffle
+			eq.MidGain = -10 * muffle
+			eq.LowGain = 2 * muffle
+			eq.Enabled = muffle > 0.001
+		end
+	end
+end
+
+local function applyAll()
+	for _, c in ipairs(SoundService:GetChildren()) do
+		if isOurGroup(c) then
+			applyGroup(c)
+		end
+	end
+end
+
+-- volumes: { Music = 0..1, Ambience = 0..1, SFX = 0..1, UI = 0..1 }
+function Sound.setVolumes(t)
+	volumes = t
+	for category in pairs(t) do
+		Sound.group(category)
+	end
+	applyAll()
+end
+
+-- 0 = обычный звук, 1 = полностью приглушённый мир
+function Sound.setMuffle(alpha)
+	alpha = math.clamp(alpha, 0, 1)
+	if math.abs(alpha - muffle) < 0.01 then
+		return
+	end
+	muffle = alpha
+	applyAll()
+end
+
+-- привязать громкость к модулю Settings
+function Sound.bindSettings(Settings)
+	local function apply()
+		local master = Settings.get("master")
+		local music = Settings.get("music")
+		local sfx = Settings.get("sfx")
+		Sound.setVolumes({
+			Music = master * music,
+			Ambience = master * (0.35 + music * 0.65),
+			SFX = master * sfx,
+			UI = master * sfx * 0.8,
+		})
+	end
+	Settings.Changed:Connect(apply)
+	apply()
+end
+
+if RunService:IsClient() then
+	SoundService.ChildAdded:Connect(function(c)
+		if isOurGroup(c) then
+			applyGroup(c)
+		end
+	end)
 end
 
 return Sound
@@ -2661,7 +2779,7 @@ function UI.button(props, onClick)
 	end
 	local normalColor = btn.TextColor3
 	local hovering = false
-	btn.MouseEnter:Connect(function()
+	local function hoverIn()
 		hovering = true
 		Sound.play("UIHover", nil, { Volume = 0.5, PlaybackSpeed = 0.9 + math.random() * 0.2 })
 		UI.tween(btn, 0.12, { TextColor3 = UI.Colors.BrightRed })
@@ -2675,12 +2793,17 @@ function UI.button(props, onClick)
 			end
 			btn.TextTransparency = 0
 		end)
-	end)
-	btn.MouseLeave:Connect(function()
+	end
+	local function hoverOut()
 		hovering = false
 		btn.TextTransparency = 0
 		UI.tween(btn, 0.2, { TextColor3 = normalColor })
-	end)
+	end
+	btn.MouseEnter:Connect(hoverIn)
+	btn.MouseLeave:Connect(hoverOut)
+	-- геймпад: выделение работает как наведение мышью
+	btn.SelectionGained:Connect(hoverIn)
+	btn.SelectionLost:Connect(hoverOut)
 	btn.Activated:Connect(function()
 		Sound.play("UIClick", nil, { Volume = 0.7 })
 		if onClick then
@@ -2691,7 +2814,7 @@ function UI.button(props, onClick)
 end
 
 -- чёрная виньетка по краям экрана
-function UI.vignette(parent, strength)
+function UI.vignette(parent, strength, color)
 	strength = strength or 0
 	local holder = UI.new("Frame", {
 		Name = "Vignette",
@@ -2705,7 +2828,7 @@ function UI.vignette(parent, strength)
 			Size = size,
 			Position = pos,
 			AnchorPoint = anchor,
-			BackgroundColor3 = Color3.new(0, 0, 0),
+			BackgroundColor3 = color or Color3.new(0, 0, 0),
 			BorderSizePixel = 0,
 			BackgroundTransparency = strength,
 			ZIndex = 1,
@@ -2841,10 +2964,12 @@ function UI.toast(screenGui, text, color)
 		AutomaticSize = Enum.AutomaticSize.Y,
 		TextXAlignment = Enum.TextXAlignment.Left,
 		ZIndex = 51,
+		TextTransparency = 1,
 		Parent = holder,
-	}, nil)
+	})
 	UI.padding(10).Parent = t
 	UI.stroke(UI.Colors.Red, 1, 0.3).Parent = t
+	UI.tween(t, 0.25, { TextTransparency = 0 })
 	task.delay(4, function()
 		if t.Parent then
 			UI.tween(t, 0.4, { TextTransparency = 1, BackgroundTransparency = 1 })
@@ -2907,6 +3032,1152 @@ function UI.glitchTitle(parent, text, size, position, textSize)
 end
 
 return UI
+]]></ProtectedString></Properties></Item>
+<Item class="ModuleScript" referent="RBXP13AAA000001"><Properties><string name="Name">AmbientDust</string><ProtectedString name="Source"><![CDATA[--[[
+	Пыль в воздухе (клиент): объём частиц вокруг камеры. Частицы освещаются только
+	светом мира (LightInfluence = 1), поэтому видны лишь в луче фонарика и под лампами.
+]]
+local RunService = game:GetService("RunService")
+
+local Settings = require(script.Parent.Settings)
+
+local AmbientDust = {}
+local started = false
+
+local RATE_BY_QUALITY = { 0, 22, 42 }
+
+function AmbientDust.start()
+	if started then
+		return
+	end
+	started = true
+
+	local volume = Instance.new("Part")
+	volume.Name = "P13_Dust"
+	volume.Anchored = true
+	volume.CanCollide = false
+	volume.CanQuery = false
+	volume.CanTouch = false
+	volume.CastShadow = false
+	volume.Transparency = 1
+	volume.Size = Vector3.new(40, 16, 40)
+	volume.Parent = workspace.CurrentCamera
+
+	local pe = Instance.new("ParticleEmitter")
+	pe.Shape = Enum.ParticleEmitterShape.Box
+	pe.ShapeStyle = Enum.ParticleEmitterShapeStyle.Volume
+	pe.Lifetime = NumberRange.new(6, 10)
+	pe.Speed = NumberRange.new(0.05, 0.3)
+	pe.SpreadAngle = Vector2.new(180, 180)
+	pe.Acceleration = Vector3.new(0, -0.025, 0)
+	pe.Drag = 0.5
+	pe.RotSpeed = NumberRange.new(-30, 30)
+	pe.Size = NumberSequence.new({
+		NumberSequenceKeypoint.new(0, 0),
+		NumberSequenceKeypoint.new(0.15, 0.05),
+		NumberSequenceKeypoint.new(0.85, 0.04),
+		NumberSequenceKeypoint.new(1, 0),
+	})
+	pe.Transparency = NumberSequence.new({
+		NumberSequenceKeypoint.new(0, 1),
+		NumberSequenceKeypoint.new(0.2, 0.35),
+		NumberSequenceKeypoint.new(0.8, 0.45),
+		NumberSequenceKeypoint.new(1, 1),
+	})
+	pe.Color = ColorSequence.new(Color3.fromRGB(235, 228, 210))
+	pe.LightInfluence = 1
+	pe.LightEmission = 0
+	pe.Brightness = 2
+	pe.Parent = volume
+
+	local function apply()
+		pe.Rate = RATE_BY_QUALITY[Settings.get("quality")] or 0
+		pe.Enabled = pe.Rate > 0
+	end
+	Settings.Changed:Connect(apply)
+	apply()
+
+	RunService.Heartbeat:Connect(function()
+		local cam = workspace.CurrentCamera
+		if cam then
+			volume.CFrame = CFrame.new(cam.CFrame.Position)
+			if volume.Parent ~= cam then
+				volume.Parent = cam
+			end
+		end
+	end)
+	return volume
+end
+
+return AmbientDust
+]]></ProtectedString></Properties></Item>
+<Item class="ModuleScript" referent="RBXP13AAA000002"><Properties><string name="Name">CameraFX</string><ProtectedString name="Source"><![CDATA[--[[
+	Процедурная камера от первого лица (клиент).
+	Поверх стандартной камеры Roblox добавляет только повороты:
+	  · крен при стрейфе и при резком повороте мышью;
+	  · дыхание в покое, дрожь от страха;
+	  · «травма»-тряска на шумe Перлина (шаги монстра, удары, скример);
+	  · проседание камеры при приземлении.
+	Смещение снимается перед кадром камеры Roblox и накладывается после,
+	поэтому взгляд игрока никогда не «уплывает».
+]]
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+
+local Settings = require(script.Parent.Settings)
+
+local CameraFX = {}
+CameraFX.enabled = true
+CameraFX.fear = 0 -- 0..1, выставляет клиент раунда
+
+local player = Players.LocalPlayer
+local started = false
+local trauma = 0
+local applied = CFrame.identity
+local hasApplied = false
+local t = 0
+
+-- пружина с критическим демпфированием
+local function spring(freq, damping)
+	return { x = 0, v = 0, target = 0, f = freq, d = damping }
+end
+local function stepSpring(s, dt)
+	local w = s.f * 2 * math.pi
+	local steps = math.max(1, math.ceil(dt / (1 / 120)))
+	local h = dt / steps
+	for _ = 1, steps do
+		local a = w * w * (s.target - s.x) - 2 * s.d * w * s.v
+		s.v += a * h
+		s.x += s.v * h
+	end
+	return s.x
+end
+
+local roll = spring(3.2, 0.75)
+local sway = spring(4, 0.7)
+local kick = spring(5, 0.45)
+
+function CameraFX.addTrauma(amount)
+	trauma = math.clamp(trauma + amount, 0, 1)
+end
+
+-- мгновенный толчок камеры (рад): pitch вниз положительный
+function CameraFX.kick(pitch)
+	kick.v += pitch * 25
+end
+
+local function isActive(cam)
+	return CameraFX.enabled and cam.CameraType == Enum.CameraType.Custom
+end
+
+function CameraFX.start()
+	if started then
+		return
+	end
+	started = true
+
+	local function hookCharacter(char)
+		local hum = char:WaitForChild("Humanoid", 10)
+		if not hum or not hum:IsA("Humanoid") then
+			return
+		end
+		local fallSpeed = 0
+		hum.StateChanged:Connect(function(_, new)
+			if new == Enum.HumanoidStateType.Freefall then
+				fallSpeed = 0
+			elseif new == Enum.HumanoidStateType.Landed then
+				local k = math.clamp(fallSpeed / 60, 0.15, 1)
+				CameraFX.kick(0.05 * k)
+				CameraFX.addTrauma(0.12 * k)
+			end
+		end)
+		local conn
+		conn = RunService.Heartbeat:Connect(function()
+			if not hum.Parent then
+				conn:Disconnect()
+				return
+			end
+			local root = hum.RootPart
+			if root and hum:GetState() == Enum.HumanoidStateType.Freefall then
+				fallSpeed = math.max(fallSpeed, -root.AssemblyLinearVelocity.Y)
+			end
+		end)
+	end
+	if player.Character then
+		task.spawn(hookCharacter, player.Character)
+	end
+	player.CharacterAdded:Connect(hookCharacter)
+
+	-- до камеры Roblox: убираем прошлое смещение, чтобы она считала «чистый» взгляд
+	RunService:BindToRenderStep("P13_CameraFX_Pre", Enum.RenderPriority.Camera.Value - 1, function()
+		local cam = workspace.CurrentCamera
+		if hasApplied and cam and isActive(cam) then
+			cam.CFrame = cam.CFrame * applied:Inverse()
+		end
+		hasApplied = false
+	end)
+
+	-- после камеры Roblox: накладываем новое смещение
+	RunService:BindToRenderStep("P13_CameraFX_Post", Enum.RenderPriority.Camera.Value + 1, function(dt)
+		local cam = workspace.CurrentCamera
+		if not cam or not isActive(cam) then
+			trauma = 0
+			return
+		end
+		t += dt
+		local shakeScale = Settings.get("shake")
+		local fear = math.clamp(CameraFX.fear, 0, 1)
+
+		local char = player.Character
+		local root = char and char:FindFirstChild("HumanoidRootPart")
+		local localVel = Vector3.zero
+		if root and root:IsA("BasePart") then
+			localVel = cam.CFrame:VectorToObjectSpace(root.AssemblyLinearVelocity)
+		end
+
+		-- крен от стрейфа и от поворота мышью
+		local mouseDelta = UserInputService:GetMouseDelta()
+		roll.target = math.clamp(-localVel.X * 0.0026, -0.045, 0.045)
+		sway.target = math.clamp(-mouseDelta.X * 0.0011, -0.035, 0.035)
+		local r = stepSpring(roll, dt) + stepSpring(sway, dt)
+		local k = stepSpring(kick, dt)
+
+		-- дыхание и дрожь
+		local breath = 1 + fear * 2.5
+		local pitch = math.sin(t * 1.55) * 0.0022 * breath + k
+		local yaw = math.sin(t * 0.77) * 0.0016 * breath
+		if fear > 0.05 then
+			pitch += math.noise(t * 7, 11.3) * 0.006 * fear
+			yaw += math.noise(t * 7, 23.9) * 0.006 * fear
+		end
+
+		-- травма
+		trauma = math.max(0, trauma - dt * 0.85)
+		local s = trauma * trauma * shakeScale
+		if s > 0 then
+			pitch += math.noise(t * 19, 1.7) * 0.07 * s
+			yaw += math.noise(t * 19, 5.1) * 0.07 * s
+			r += math.noise(t * 19, 9.4) * 0.09 * s
+		end
+
+		applied = CFrame.Angles(-pitch, yaw, r * math.max(shakeScale, 0.35))
+		cam.CFrame = cam.CFrame * applied
+		hasApplied = true
+	end)
+end
+
+return CameraFX
+]]></ProtectedString></Properties></Item>
+<Item class="ModuleScript" referent="RBXP13AAA000003"><Properties><string name="Name">PostFX</string><ProtectedString name="Source"><![CDATA[--[[
+	Кинематографичная пост-обработка (клиент).
+	Слои поверх базового грейда плейса:
+	  · автофокус глубины резкости по тому, куда смотрит камера;
+	  · motion blur от скорости поворота камеры;
+	  · «страх»: обесцвечивание, контраст и красный оттенок, когда Пациент рядом;
+	  · адаптация глаз к темноте (экспозиция медленно растёт без фонарика);
+	  · пресеты качества: тени ламп, bloom, DOF и blur включаются по уровню.
+]]
+local Players = game:GetService("Players")
+local Lighting = game:GetService("Lighting")
+local RunService = game:GetService("RunService")
+
+local Settings = require(script.Parent.Settings)
+
+local PostFX = {}
+
+local player = Players.LocalPlayer
+local started = false
+
+local fearTarget, fear = 0, 0
+local adaptTarget, adapt = 0, 0
+local focusOverride = nil
+local focus = 28
+local blurAmount = 0
+local lastLook = nil
+local frame = 0
+local motionBlurAllowed = true
+
+local bloom, dof, fearCC, blur
+local base = { exposure = 0, farIntensity = 0.18, bloom = 0 }
+local shadowLights = {}
+local excluded = {}
+
+local function ensure(className, name)
+	local e = Lighting:FindFirstChild(name)
+	if not e or not e:IsA(className) then
+		e = Instance.new(className)
+		e.Name = name
+		e.Parent = Lighting
+	end
+	return e
+end
+
+local function applyQuality()
+	local q = Settings.get("quality")
+	if bloom then
+		bloom.Enabled = q >= 2
+	end
+	if dof then
+		dof.Enabled = q >= 2 and Settings.get("dof")
+	end
+	-- тени ламп — самая дорогая часть кадра на слабых устройствах
+	for light, original in pairs(shadowLights) do
+		if light.Parent then
+			light.Shadows = original and q >= 2
+		end
+	end
+end
+
+-- options.lightsRoot — папка с лампами карты; options.exposure — базовая экспозиция
+function PostFX.start(options)
+	if started then
+		return
+	end
+	started = true
+	options = options or {}
+
+	bloom = Lighting:FindFirstChildOfClass("BloomEffect")
+	dof = Lighting:FindFirstChildOfClass("DepthOfFieldEffect") or ensure("DepthOfFieldEffect", "DepthOfField")
+	fearCC = ensure("ColorCorrectionEffect", "P13_Fear")
+	blur = ensure("BlurEffect", "P13_MotionBlur")
+	blur.Size = 0
+
+	base.exposure = Lighting.ExposureCompensation
+	base.farIntensity = dof.FarIntensity > 0 and dof.FarIntensity or 0.18
+	base.bloom = bloom and bloom.Intensity or 0
+
+	if options.lightsRoot then
+		for _, d in ipairs(options.lightsRoot:GetDescendants()) do
+			if d:IsA("Light") and d.Shadows then
+				shadowLights[d] = true
+			end
+		end
+	end
+
+	Settings.Changed:Connect(applyQuality)
+	applyQuality()
+
+	RunService:BindToRenderStep("P13_PostFX", Enum.RenderPriority.Last.Value, function(dt)
+		PostFX._update(dt)
+	end)
+end
+
+-- не наводить автофокус на эти объекты (фонарик, частицы и т.п.)
+function PostFX.exclude(inst)
+	table.insert(excluded, inst)
+end
+
+function PostFX.setFear(k)
+	fearTarget = math.clamp(k, 0, 1)
+end
+
+function PostFX.setAdaptation(k)
+	adaptTarget = math.clamp(k, 0, 1)
+end
+
+-- зафиксировать фокус на дистанции (меню, катсцены); nil = автофокус
+function PostFX.setFocus(distance)
+	focusOverride = distance
+end
+
+function PostFX.setMotionBlurAllowed(on)
+	motionBlurAllowed = on
+end
+
+local rayParams = RaycastParams.new()
+rayParams.FilterType = Enum.RaycastFilterType.Exclude
+
+function PostFX._update(dt)
+	local cam = workspace.CurrentCamera
+	if not cam then
+		return
+	end
+	frame += 1
+	local q = Settings.get("quality")
+
+	-- страх
+	fear += (fearTarget - fear) * math.min(1, dt * 2.2)
+	fearCC.Saturation = -0.5 * fear
+	fearCC.Contrast = 0.18 * fear
+	fearCC.Brightness = -0.03 * fear
+	fearCC.TintColor = Color3.new(1, 1 - 0.16 * fear, 1 - 0.2 * fear)
+	if bloom then
+		bloom.Intensity = base.bloom * (1 + fear * 0.35)
+	end
+
+	-- адаптация к темноте: медленно привыкаем, быстро слепнем обратно
+	local rate = adaptTarget > adapt and 0.22 or 1.6
+	adapt += (adaptTarget - adapt) * math.min(1, dt * rate)
+	Lighting.ExposureCompensation = base.exposure + adapt * 0.3 - fear * 0.08
+
+	-- автофокус
+	if dof and dof.Enabled then
+		local target = focusOverride
+		if not target and frame % 3 == 0 then
+			local filter = { cam }
+			if player.Character then
+				table.insert(filter, player.Character)
+			end
+			for _, e in ipairs(excluded) do
+				table.insert(filter, e)
+			end
+			rayParams.FilterDescendantsInstances = filter
+			local hit = workspace:Raycast(cam.CFrame.Position, cam.CFrame.LookVector * 220, rayParams)
+			target = hit and hit.Distance or 220
+		end
+		if target then
+			focus += (target - focus) * math.min(1, dt * 5)
+		end
+		dof.FocusDistance = focus
+		dof.InFocusRadius = math.clamp(focus * 0.75, 10, 60)
+		dof.FarIntensity = math.clamp(base.farIntensity + fear * 0.12, 0, 1)
+		dof.NearIntensity = 0
+	end
+
+	-- motion blur по угловой скорости камеры
+	local look = cam.CFrame.LookVector
+	local want = 0
+	if lastLook and dt > 0 and q >= 3 and Settings.get("motionBlur") and motionBlurAllowed then
+		local angle = math.acos(math.clamp(look:Dot(lastLook), -1, 1))
+		local speed = angle / dt -- рад/с
+		want = math.clamp((speed - 2.2) * 1.6, 0, 8)
+	end
+	lastLook = look
+	blurAmount += (want - blurAmount) * math.min(1, dt * 14)
+	blur.Size = blurAmount < 0.3 and 0 or blurAmount
+end
+
+return PostFX
+]]></ProtectedString></Properties></Item>
+<Item class="ModuleScript" referent="RBXP13AAA000004"><Properties><string name="Name">Prompts</string><ProtectedString name="Source"><![CDATA[--[[
+	Свои подсказки взаимодействия вместо стандартных ProximityPrompt (клиент):
+	клавиша в рамке, действие, объект и полоса удержания. Работает с клавиатурой,
+	геймпадом и тачем (на тач-экране по подсказке можно нажать).
+]]
+local ProximityPromptService = game:GetService("ProximityPromptService")
+local UserInputService = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+
+local UI = require(script.Parent.UI)
+local Sound = require(script.Parent.Sound)
+
+local Prompts = {}
+local started = false
+
+local GAMEPAD_LABELS = {
+	[Enum.KeyCode.ButtonX] = "X",
+	[Enum.KeyCode.ButtonY] = "Y",
+	[Enum.KeyCode.ButtonA] = "A",
+	[Enum.KeyCode.ButtonB] = "B",
+	[Enum.KeyCode.ButtonL1] = "LB",
+	[Enum.KeyCode.ButtonR1] = "RB",
+}
+
+local function keyText(prompt, inputType)
+	if inputType == Enum.ProximityPromptInputType.Touch then
+		return "●"
+	elseif inputType == Enum.ProximityPromptInputType.Gamepad then
+		return GAMEPAD_LABELS[prompt.GamepadKeyCode] or "X"
+	end
+	local s = UserInputService:GetStringForKeyCode(prompt.KeyboardKeyCode)
+	if s == nil or s == "" then
+		s = prompt.KeyboardKeyCode.Name
+	end
+	return string.upper(s)
+end
+
+local function build(prompt, inputType, playerGui)
+	local bb = UI.new("BillboardGui", {
+		Name = "P13_Prompt",
+		Adornee = prompt.Parent,
+		AlwaysOnTop = true,
+		LightInfluence = 0,
+		Size = UDim2.fromOffset(300, 64),
+		SizeOffset = Vector2.new(0.5, 0),
+		StudsOffset = Vector3.new(0, 0.6, 0),
+		ResetOnSpawn = false,
+		Parent = playerGui,
+	})
+	local scale = UI.new("UIScale", { Scale = 0.6, Parent = bb })
+	local root = UI.new("Frame", {
+		Size = UDim2.fromScale(1, 1),
+		BackgroundTransparency = 1,
+		Parent = bb,
+	})
+
+	local keyBox = UI.new("TextButton", {
+		AutoButtonColor = false,
+		Text = keyText(prompt, inputType),
+		Font = UI.FontTitle,
+		TextSize = 22,
+		TextColor3 = UI.Colors.Text,
+		BackgroundColor3 = Color3.fromRGB(10, 8, 8),
+		BackgroundTransparency = 0.25,
+		Size = UDim2.fromOffset(46, 46),
+		Position = UDim2.new(0, 0, 0.5, 0),
+		AnchorPoint = Vector2.new(0, 0.5),
+		Parent = root,
+	}, { UI.corner(6), UI.stroke(UI.Colors.Text, 1.5, 0.35) })
+
+	local holdBack = UI.new("Frame", {
+		Size = UDim2.new(1, -8, 0, 3),
+		Position = UDim2.new(0, 4, 1, -6),
+		BackgroundColor3 = Color3.fromRGB(40, 20, 20),
+		BorderSizePixel = 0,
+		Visible = prompt.HoldDuration > 0,
+		Parent = keyBox,
+	})
+	local holdFill = UI.new("Frame", {
+		Size = UDim2.fromScale(0, 1),
+		BackgroundColor3 = UI.Colors.BrightRed,
+		BorderSizePixel = 0,
+		Parent = holdBack,
+	})
+
+	UI.label({
+		Text = string.upper(prompt.ActionText),
+		Font = UI.FontTitle,
+		TextSize = 22,
+		TextWrapped = false,
+		TextStrokeTransparency = 0.5,
+		Size = UDim2.new(1, -58, 0, 26),
+		Position = UDim2.fromOffset(58, prompt.ObjectText ~= "" and 6 or 19),
+		Parent = root,
+	})
+	if prompt.ObjectText ~= "" then
+		UI.label({
+			Text = prompt.ObjectText,
+			Font = UI.FontMono,
+			TextSize = 14,
+			TextWrapped = false,
+			TextColor3 = UI.Colors.Dim,
+			TextStrokeTransparency = 0.6,
+			Size = UDim2.new(1, -58, 0, 18),
+			Position = UDim2.fromOffset(58, 34),
+			Parent = root,
+		})
+	end
+
+	local conns = {}
+	local holdTween = nil
+	table.insert(conns, prompt.PromptButtonHoldBegan:Connect(function()
+		holdFill.Size = UDim2.fromScale(0, 1)
+		holdTween = UI.tween(holdFill, prompt.HoldDuration, { Size = UDim2.fromScale(1, 1) }, Enum.EasingStyle.Linear)
+	end))
+	table.insert(conns, prompt.PromptButtonHoldEnded:Connect(function()
+		if holdTween then
+			holdTween:Cancel()
+		end
+		UI.tween(holdFill, 0.15, { Size = UDim2.fromScale(0, 1) })
+	end))
+	table.insert(conns, prompt.Triggered:Connect(function()
+		UI.tween(scale, 0.06, { Scale = 1.12 })
+		task.delay(0.07, function()
+			UI.tween(scale, 0.15, { Scale = 1 })
+		end)
+		keyBox.BackgroundColor3 = UI.Colors.Red
+		UI.tween(keyBox, 0.35, { BackgroundColor3 = Color3.fromRGB(10, 8, 8) })
+	end))
+
+	if inputType == Enum.ProximityPromptInputType.Touch or prompt.ClickablePrompt then
+		table.insert(conns, keyBox.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.Touch or input.UserInputType == Enum.UserInputType.MouseButton1 then
+				prompt:InputHoldBegin()
+			end
+		end))
+		table.insert(conns, keyBox.InputEnded:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.Touch or input.UserInputType == Enum.UserInputType.MouseButton1 then
+				prompt:InputHoldEnd()
+			end
+		end))
+	end
+
+	UI.tween(scale, 0.22, { Scale = 1 }, Enum.EasingStyle.Back)
+	Sound.play("UIHover", nil, { Volume = 0.25, PlaybackSpeed = 0.8 })
+
+	return function()
+		for _, c in ipairs(conns) do
+			c:Disconnect()
+		end
+		UI.tween(scale, 0.12, { Scale = 0.6 })
+		task.delay(0.13, function()
+			bb:Destroy()
+		end)
+	end
+end
+
+function Prompts.start()
+	if started then
+		return
+	end
+	started = true
+	local playerGui = Players.LocalPlayer:WaitForChild("PlayerGui")
+
+	local function adopt(d)
+		if d:IsA("ProximityPrompt") then
+			d.Style = Enum.ProximityPromptStyle.Custom
+		end
+	end
+	for _, d in ipairs(workspace:GetDescendants()) do
+		adopt(d)
+	end
+	workspace.DescendantAdded:Connect(adopt)
+
+	ProximityPromptService.PromptShown:Connect(function(prompt, inputType)
+		if prompt.Style ~= Enum.ProximityPromptStyle.Custom then
+			return
+		end
+		local cleanup = build(prompt, inputType, playerGui)
+		prompt.PromptHidden:Wait()
+		cleanup()
+	end)
+end
+
+return Prompts
+]]></ProtectedString></Properties></Item>
+<Item class="ModuleScript" referent="RBXP13AAA000005"><Properties><string name="Name">Settings</string><ProtectedString name="Source"><![CDATA[--[[
+	Настройки игрока (звук, графика, камера, субтитры).
+	Схема общая для клиента и сервера: сервер чистит присланное через Settings.sanitize
+	и хранит в профиле, поэтому настройки переезжают между лобби и больницей.
+]]
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local Settings = {}
+
+Settings.Defaults = {
+	master = 1,
+	music = 0.6,
+	sfx = 1,
+	fov = 70,
+	shake = 1,
+	quality = 3, -- 1 = низко, 2 = средне, 3 = ультра
+	motionBlur = true,
+	dof = true,
+	grain = true,
+	flicker = true,
+	subtitles = true,
+}
+
+-- тип, минимум, максимум, шаг
+Settings.Schema = {
+	master = { "number", 0, 1, 0.05 },
+	music = { "number", 0, 1, 0.05 },
+	sfx = { "number", 0, 1, 0.05 },
+	fov = { "number", 60, 90, 1 },
+	shake = { "number", 0, 1, 0.05 },
+	quality = { "number", 1, 3, 1 },
+	motionBlur = { "boolean" },
+	dof = { "boolean" },
+	grain = { "boolean" },
+	flicker = { "boolean" },
+	subtitles = { "boolean" },
+}
+
+function Settings.sanitize(input)
+	local out = {}
+	for key, def in pairs(Settings.Defaults) do
+		local schema = Settings.Schema[key]
+		local v = type(input) == "table" and input[key] or nil
+		if schema[1] == "number" then
+			if type(v) ~= "number" or v ~= v then
+				v = def
+			end
+			v = math.clamp(v, schema[2], schema[3])
+			v = math.floor(v / schema[4] + 0.5) * schema[4]
+		elseif type(v) ~= "boolean" then
+			v = def
+		end
+		out[key] = v
+	end
+	return out
+end
+
+-- ниже — клиентское состояние ------------------------------------------------
+
+local values = Settings.sanitize(nil)
+local changedEvent = Instance.new("BindableEvent")
+Settings.Changed = changedEvent.Event -- (key) ; key == "*" — обновилось всё сразу
+
+local started = false
+local dirty = false
+local saveToken = 0
+
+function Settings.get(key)
+	return values[key]
+end
+
+function Settings.all()
+	return table.clone(values)
+end
+
+local function scheduleSave()
+	saveToken += 1
+	local my = saveToken
+	task.delay(1.5, function()
+		if my ~= saveToken then
+			return
+		end
+		local remotes = ReplicatedStorage:FindFirstChild("Remotes")
+		local ev = remotes and remotes:FindFirstChild("SaveSettings")
+		if ev and ev:IsA("RemoteEvent") then
+			ev:FireServer(values)
+		end
+	end)
+end
+
+function Settings.set(key, value)
+	if Settings.Defaults[key] == nil then
+		return
+	end
+	local nextValues = table.clone(values)
+	nextValues[key] = value
+	nextValues = Settings.sanitize(nextValues)
+	if nextValues[key] == values[key] then
+		return
+	end
+	values = nextValues
+	dirty = true
+	changedEvent:Fire(key)
+	scheduleSave()
+end
+
+-- подтянуть сохранённые настройки из профиля (один раз, локальные правки не затираем)
+function Settings.start()
+	if started then
+		return
+	end
+	started = true
+	local ClientData = require(script.Parent.ClientData)
+	ClientData.start()
+	local pulled = false
+	local function pull(d)
+		if pulled or type(d) ~= "table" or type(d.settings) ~= "table" then
+			return
+		end
+		pulled = true
+		if dirty then
+			return
+		end
+		values = Settings.sanitize(d.settings)
+		changedEvent:Fire("*")
+	end
+	pull(ClientData.get())
+	ClientData.Changed:Connect(pull)
+end
+
+return Settings
+]]></ProtectedString></Properties></Item>
+<Item class="ModuleScript" referent="RBXP13AAA000006"><Properties><string name="Name">SettingsMenu</string><ProtectedString name="Source"><![CDATA[--[[
+	Окно настроек с вкладками (ЗВУК / ГРАФИКА / ИГРА) — общее для лобби и больницы.
+	Всё пишет в модуль Settings, тот сохраняет в профиль игрока.
+]]
+local UserInputService = game:GetService("UserInputService")
+
+local UI = require(script.Parent.UI)
+local Settings = require(script.Parent.Settings)
+
+local SettingsMenu = {}
+local Colors = UI.Colors
+
+local QUALITY_NAMES = { "НИЗКО", "СРЕДНЕ", "УЛЬТРА" }
+
+-- options.footer = true — внизу метка для статистики (api.footer)
+function SettingsMenu.build(parentGui, options)
+	options = options or {}
+	local win = UI.window(parentGui, "НАСТРОЙКИ", UDim2.fromOffset(640, 500))
+	local refreshers = {}
+
+	local tabsBar = UI.new("Frame", {
+		Size = UDim2.new(1, 0, 0, 38),
+		BackgroundTransparency = 1,
+		Parent = win.content,
+	}, {
+		UI.new("UIListLayout", {
+			FillDirection = Enum.FillDirection.Horizontal,
+			Padding = UDim.new(0, 8),
+			SortOrder = Enum.SortOrder.LayoutOrder,
+		}),
+	})
+	local pages = {}
+	local tabButtons = {}
+	local function showTab(id)
+		for k, page in pairs(pages) do
+			page.Visible = k == id
+		end
+		for k, b in pairs(tabButtons) do
+			b.BackgroundColor3 = k == id and Color3.fromRGB(120, 18, 18) or Colors.Panel2
+		end
+	end
+	local function page(id, title, order)
+		local p = UI.new("ScrollingFrame", {
+			Size = UDim2.new(1, 0, 1, options.footer and -110 or -50),
+			Position = UDim2.fromOffset(0, 50),
+			BackgroundTransparency = 1,
+			BorderSizePixel = 0,
+			ScrollBarThickness = 4,
+			ScrollBarImageColor3 = Colors.Red,
+			CanvasSize = UDim2.new(),
+			AutomaticCanvasSize = Enum.AutomaticSize.Y,
+			Visible = false,
+			Parent = win.content,
+		}, { UI.new("UIListLayout", { Padding = UDim.new(0, 8), SortOrder = Enum.SortOrder.LayoutOrder }) })
+		pages[id] = p
+		tabButtons[id] = UI.button({
+			Text = title,
+			TextSize = 18,
+			Size = UDim2.fromOffset(150, 36),
+			LayoutOrder = order,
+			Parent = tabsBar,
+		}, function()
+			showTab(id)
+		end)
+		return p
+	end
+
+	local function row(parent, order, labelText, hint)
+		local r = UI.new("Frame", {
+			Size = UDim2.new(1, -8, 0, hint and 52 or 42),
+			BackgroundColor3 = Colors.Panel2,
+			BackgroundTransparency = 0.5,
+			LayoutOrder = order,
+			Parent = parent,
+		}, { UI.corner(3) })
+		UI.label({
+			Text = labelText,
+			Font = UI.FontBold,
+			TextSize = 17,
+			Size = UDim2.new(0.5, -12, 0, 24),
+			Position = UDim2.fromOffset(12, hint and 5 or 9),
+			Parent = r,
+		})
+		if hint then
+			UI.label({
+				Text = hint,
+				Font = UI.FontMono,
+				TextSize = 12,
+				TextColor3 = Colors.Dim,
+				Size = UDim2.new(0.5, -12, 0, 18),
+				Position = UDim2.fromOffset(12, 29),
+				Parent = r,
+			})
+		end
+		return r
+	end
+
+	-- ползунок: клик/перетаскивание по полосе + кнопки − и +
+	local function slider(parent, order, labelText, key, formatValue, hint)
+		local schema = Settings.Schema[key]
+		local min, max = schema[2], schema[3]
+		local nudge = (max - min) / 10
+		local r = row(parent, order, labelText, hint)
+		local bar = UI.new("TextButton", {
+			AutoButtonColor = false,
+			Text = "",
+			Size = UDim2.new(0.5, -150, 0, 8),
+			Position = UDim2.new(0.5, 40, 0.5, 0),
+			AnchorPoint = Vector2.new(0, 0.5),
+			BackgroundColor3 = Color3.fromRGB(30, 14, 14),
+			BorderSizePixel = 0,
+			Parent = r,
+		}, { UI.corner(4) })
+		local fill = UI.new("Frame", {
+			Size = UDim2.fromScale(0, 1),
+			BackgroundColor3 = Colors.Red,
+			BorderSizePixel = 0,
+			Parent = bar,
+		}, { UI.corner(4) })
+		local knob = UI.new("Frame", {
+			Size = UDim2.fromOffset(14, 14),
+			AnchorPoint = Vector2.new(0.5, 0.5),
+			Position = UDim2.fromScale(0, 0.5),
+			BackgroundColor3 = Colors.Text,
+			Parent = bar,
+		}, { UI.corner(7) })
+		local valueLabel = UI.label({
+			Font = UI.FontMono,
+			TextSize = 16,
+			TextXAlignment = Enum.TextXAlignment.Center,
+			Size = UDim2.fromOffset(60, 30),
+			Position = UDim2.new(1, -96, 0.5, 0),
+			AnchorPoint = Vector2.new(0, 0.5),
+			Parent = r,
+		})
+		local function refresh()
+			local v = Settings.get(key)
+			local a = (v - min) / (max - min)
+			fill.Size = UDim2.fromScale(a, 1)
+			knob.Position = UDim2.fromScale(a, 0.5)
+			valueLabel.Text = formatValue(v)
+		end
+		local function setFromX(x)
+			local a = math.clamp((x - bar.AbsolutePosition.X) / math.max(1, bar.AbsoluteSize.X), 0, 1)
+			Settings.set(key, min + a * (max - min))
+		end
+		local dragging = false
+		bar.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = true
+				setFromX(input.Position.X)
+			end
+		end)
+		UserInputService.InputChanged:Connect(function(input)
+			if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+				setFromX(input.Position.X)
+			end
+		end)
+		UserInputService.InputEnded:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = false
+			end
+		end)
+		UI.button({ Text = "−", TextSize = 20, Size = UDim2.fromOffset(30, 30), Position = UDim2.new(0.5, 4, 0.5, 0), AnchorPoint = Vector2.new(0, 0.5), Parent = r }, function()
+			Settings.set(key, Settings.get(key) - nudge)
+		end)
+		UI.button({ Text = "+", TextSize = 20, Size = UDim2.fromOffset(30, 30), Position = UDim2.new(1, -34, 0.5, 0), AnchorPoint = Vector2.new(0, 0.5), Parent = r }, function()
+			Settings.set(key, Settings.get(key) + nudge)
+		end)
+		table.insert(refreshers, refresh)
+	end
+
+	local function toggle(parent, order, labelText, key, hint)
+		local r = row(parent, order, labelText, hint)
+		local b
+		b = UI.button({
+			Text = "",
+			TextSize = 16,
+			Size = UDim2.fromOffset(150, 32),
+			Position = UDim2.new(1, -162, 0.5, 0),
+			AnchorPoint = Vector2.new(0, 0.5),
+			Parent = r,
+		}, function()
+			Settings.set(key, not Settings.get(key))
+		end)
+		table.insert(refreshers, function()
+			local on = Settings.get(key)
+			b.Text = on and "ВКЛ" or "ВЫКЛ"
+			b.TextColor3 = on and Colors.Text or Colors.Dim
+		end)
+	end
+
+	local function choice(parent, order, labelText, key, names, hint)
+		local r = row(parent, order, labelText, hint)
+		local buttons = {}
+		for i, name in ipairs(names) do
+			buttons[i] = UI.button({
+				Text = name,
+				TextSize = 15,
+				Size = UDim2.fromOffset(92, 32),
+				Position = UDim2.new(1, -12 - (#names - i + 1) * 98, 0.5, 0),
+				AnchorPoint = Vector2.new(0, 0.5),
+				Parent = r,
+			}, function()
+				Settings.set(key, i)
+			end)
+		end
+		table.insert(refreshers, function()
+			for i, b in ipairs(buttons) do
+				local sel = Settings.get(key) == i
+				b.BackgroundColor3 = sel and Color3.fromRGB(120, 18, 18) or Colors.Panel2
+				b.TextColor3 = sel and Colors.Text or Colors.Dim
+			end
+		end)
+	end
+
+	local pct = function(v)
+		return math.floor(v * 100 + 0.5) .. "%"
+	end
+
+	local audio = page("audio", "ЗВУК", 1)
+	slider(audio, 1, "ОБЩАЯ ГРОМКОСТЬ", "master", pct)
+	slider(audio, 2, "МУЗЫКА И ЭМБИЕНТ", "music", pct)
+	slider(audio, 3, "ЭФФЕКТЫ", "sfx", pct, "шаги, монстр, двери, интерфейс")
+	toggle(audio, 4, "СУБТИТРЫ ЗВУКОВ", "subtitles", "подписи к важным звукам")
+
+	local video = page("video", "ГРАФИКА", 2)
+	choice(video, 1, "КАЧЕСТВО", "quality", QUALITY_NAMES, "тени ламп, bloom, пыль, размытие")
+	toggle(video, 2, "ГЛУБИНА РЕЗКОСТИ", "dof", "автофокус как у кинокамеры")
+	toggle(video, 3, "РАЗМЫТИЕ В ДВИЖЕНИИ", "motionBlur", "только на «ультра»")
+	toggle(video, 4, "ЗЕРНО ПЛЁНКИ", "grain")
+	toggle(video, 5, "МЕРЦАНИЕ СВЕТА В МЕНЮ", "flicker", "выключи, если чувствителен к вспышкам")
+
+	local gameplay = page("game", "ИГРА", 3)
+	slider(gameplay, 1, "ПОЛЕ ЗРЕНИЯ", "fov", function(v)
+		return tostring(math.floor(v + 0.5)) .. "°"
+	end)
+	slider(gameplay, 2, "ТРЯСКА КАМЕРЫ", "shake", pct, "0% — для тех, кого укачивает")
+
+	local api = { window = win }
+	if options.footer then
+		api.footer = UI.label({
+			Text = "",
+			Font = UI.FontMono,
+			TextSize = 14,
+			TextColor3 = Colors.Dim,
+			TextYAlignment = Enum.TextYAlignment.Top,
+			Size = UDim2.new(1, 0, 0, 54),
+			Position = UDim2.new(0, 0, 1, -54),
+			Parent = win.content,
+		})
+	end
+
+	function api.refresh()
+		for _, f in ipairs(refreshers) do
+			f()
+		end
+	end
+	Settings.Changed:Connect(api.refresh)
+	showTab("audio")
+	api.refresh()
+	return api
+end
+
+return SettingsMenu
+]]></ProtectedString></Properties></Item>
+<Item class="ModuleScript" referent="RBXP13AAA000007"><Properties><string name="Name">Subtitles</string><ProtectedString name="Source"><![CDATA[--[[
+	Субтитры звуков (клиент). Следит за звуками из Config.Sounds по имени инстанса
+	(Sound.make называет звук ключом) — и клиентскими, и серверными — и подписывает
+	то, что игрок реально слышит рядом. Выключаются в настройках.
+]]
+local SoundService = game:GetService("SoundService")
+
+local Settings = require(script.Parent.Settings)
+local UI = require(script.Parent.UI)
+
+local Subtitles = {}
+
+Subtitles.Captions = {
+	Whisper = { "[шёпот прямо за спиной]", Color3.fromRGB(200, 190, 255) },
+	MetalBang = { "[где-то лязгнул металл]", nil },
+	MonsterScream = { "[нечеловеческий вопль]", Color3.fromRGB(255, 90, 90) },
+	MonsterStep = { "[тяжёлые шаги рядом]", Color3.fromRGB(255, 150, 150) },
+	MonsterBreath = { "[хриплое дыхание]", Color3.fromRGB(255, 150, 150) },
+	ChaseSting = { "[оно тебя заметило]", Color3.fromRGB(255, 70, 70) },
+	GeneratorOn = { "[генератор с рёвом заводится]", Color3.fromRGB(235, 185, 70) },
+	FuseInsert = { "[щелчок предохранителя]", nil },
+	Static = { "[треск помех]", nil },
+	Pickup = { "[подобрано]", nil },
+}
+
+local holder = nil
+local lastShown = {}
+
+local function soundPosition(s)
+	local p = s.Parent
+	if p and p:IsA("BasePart") then
+		return p.Position
+	elseif p and p:IsA("Attachment") then
+		return p.WorldPosition
+	end
+	return nil
+end
+
+function Subtitles.show(text, color, duration)
+	if not holder or not Settings.get("subtitles") then
+		return
+	end
+	local now = os.clock()
+	if lastShown[text] and now - lastShown[text] < 3.5 then
+		return
+	end
+	lastShown[text] = now
+	local lines = {}
+	for _, c in ipairs(holder:GetChildren()) do
+		if c:IsA("TextLabel") then
+			table.insert(lines, c)
+		end
+	end
+	if #lines >= 3 then
+		table.sort(lines, function(a, b)
+			return a.LayoutOrder < b.LayoutOrder
+		end)
+		lines[1]:Destroy()
+	end
+	local label = UI.label({
+		Text = text,
+		Font = UI.FontMono,
+		TextSize = 17,
+		TextColor3 = color or UI.Colors.Text,
+		TextXAlignment = Enum.TextXAlignment.Center,
+		BackgroundColor3 = Color3.new(0, 0, 0),
+		BackgroundTransparency = 0.45,
+		AutomaticSize = Enum.AutomaticSize.XY,
+		TextWrapped = false,
+		Size = UDim2.fromOffset(0, 0),
+		LayoutOrder = math.floor(now * 1000) % 1000000000,
+		TextTransparency = 1,
+		ZIndex = 40,
+		Parent = holder,
+	})
+	UI.new("UIPadding", {
+		PaddingLeft = UDim.new(0, 10),
+		PaddingRight = UDim.new(0, 10),
+		PaddingTop = UDim.new(0, 3),
+		PaddingBottom = UDim.new(0, 3),
+		Parent = label,
+	})
+	UI.corner(3).Parent = label
+	UI.tween(label, 0.2, { TextTransparency = 0 })
+	task.delay(duration or 3.2, function()
+		if label.Parent then
+			UI.tween(label, 0.5, { TextTransparency = 1, BackgroundTransparency = 1 })
+			task.wait(0.55)
+			label:Destroy()
+		end
+	end)
+end
+
+local function watch(s)
+	if not s:IsA("Sound") then
+		return
+	end
+	local caption = Subtitles.Captions[s.Name]
+	if not caption then
+		return
+	end
+	local function onPlay()
+		local pos = soundPosition(s)
+		local cam = workspace.CurrentCamera
+		if pos and cam and (pos - cam.CFrame.Position).Magnitude > s.RollOffMaxDistance * 0.6 then
+			return
+		end
+		Subtitles.show(caption[1], caption[2])
+	end
+	s.Played:Connect(onPlay)
+	if s.IsPlaying then
+		onPlay()
+	end
+end
+
+function Subtitles.start(screenGui)
+	if holder then
+		return
+	end
+	holder = UI.new("Frame", {
+		Name = "Subtitles",
+		Size = UDim2.new(0.8, 0, 0, 96),
+		Position = UDim2.new(0.5, 0, 1, -118),
+		AnchorPoint = Vector2.new(0.5, 1),
+		BackgroundTransparency = 1,
+		ZIndex = 40,
+		Parent = screenGui,
+	}, {
+		UI.new("UIListLayout", {
+			Padding = UDim.new(0, 4),
+			HorizontalAlignment = Enum.HorizontalAlignment.Center,
+			VerticalAlignment = Enum.VerticalAlignment.Bottom,
+			SortOrder = Enum.SortOrder.LayoutOrder,
+		}),
+	})
+	for _, root in ipairs({ workspace, SoundService }) do
+		for _, d in ipairs(root:GetDescendants()) do
+			watch(d)
+		end
+		root.DescendantAdded:Connect(watch)
+	end
+end
+
+return Subtitles
 ]]></ProtectedString></Properties></Item>
 </Item>
 </Item>
@@ -3003,6 +4274,7 @@ local Remotes = require(script.Parent.Remotes)
 local Shared = game:GetService("ReplicatedStorage"):WaitForChild("Shared")
 local Config = require(Shared.Config)
 local BattlePass = require(Shared.BattlePass)
+local Settings = require(Shared.Settings)
 
 local DataService = {}
 DataService.passChecker = nil -- function(player) -> table of pass flags (ставит ShopService)
@@ -3035,7 +4307,7 @@ local function defaults()
 		receipts = {},
 		receiptOrder = {},
 		savedAt = 0,
-		settings = { sensitivity = 1, music = 0.6 },
+		settings = table.clone(Settings.Defaults),
 	}
 end
 
@@ -3083,7 +4355,7 @@ local function snapshot(player, data)
 		revives = data.revives,
 		stats = data.stats,
 		passes = passes,
-		settings = data.settings,
+		settings = Settings.sanitize(data.settings),
 	}
 end
 
@@ -3217,6 +4489,24 @@ function DataService.start()
 		end
 		return snapshot(player, data)
 	end
+
+	-- настройки клиента: чистим по схеме и ограничиваем частоту
+	local lastSettingsSave = {}
+	Remotes.SaveSettings.OnServerEvent:Connect(function(player, input)
+		local data = profiles[player]
+		if not data or type(input) ~= "table" then
+			return
+		end
+		local now = os.clock()
+		if lastSettingsSave[player] and now - lastSettingsSave[player] < 1 then
+			return
+		end
+		lastSettingsSave[player] = now
+		data.settings = Settings.sanitize(input)
+	end)
+	Players.PlayerRemoving:Connect(function(player)
+		lastSettingsSave[player] = nil
+	end)
 
 	Players.PlayerAdded:Connect(loadPlayer)
 	for _, p in ipairs(Players:GetPlayers()) do
@@ -3432,7 +4722,7 @@ if not folder then
 	folder.Parent = ReplicatedStorage
 end
 
-local events = { "DataUpdated", "Notify", "Action", "Jumpscare", "RoundUpdate", "Teleporting", "Power", "Results", "Scare" }
+local events = { "DataUpdated", "Notify", "Action", "Jumpscare", "RoundUpdate", "Teleporting", "Power", "Results", "Scare", "SaveSettings" }
 local functions = { "GetData", "ShopRequest", "ClaimReward", "UseRevive" }
 
 for _, name in ipairs(events) do
@@ -4079,6 +5369,8 @@ local UserInputService = game:GetService("UserInputService")
 local MarketplaceService = game:GetService("MarketplaceService")
 local TeleportService = game:GetService("TeleportService")
 local StarterGui = game:GetService("StarterGui")
+local GuiService = game:GetService("GuiService")
+local TweenService = game:GetService("TweenService")
 
 local player = Players.LocalPlayer
 local Shared = ReplicatedStorage:WaitForChild("Shared")
@@ -4088,6 +5380,11 @@ local UI = require(Shared:WaitForChild("UI"))
 local ClientData = require(Shared:WaitForChild("ClientData"))
 local BattlePass = require(Shared:WaitForChild("BattlePass"))
 local FL = require(Shared:WaitForChild("FlashlightClient"))
+local Settings = require(Shared:WaitForChild("Settings"))
+local SettingsMenu = require(Shared:WaitForChild("SettingsMenu"))
+local PostFX = require(Shared:WaitForChild("PostFX"))
+local Prompts = require(Shared:WaitForChild("Prompts"))
+local AmbientDust = require(Shared:WaitForChild("AmbientDust"))
 local Remotes = ReplicatedStorage:WaitForChild("Remotes")
 local Colors = UI.Colors
 
@@ -4097,9 +5394,15 @@ local menuMonster = Lobby:FindFirstChild("MenuMonster")
 local menuPoints = Lobby:FindFirstChild("MenuMonsterPoints")
 
 ClientData.start()
+Settings.start()
+Sound.bindSettings(Settings)
+PostFX.start({ lightsRoot = Lobby:FindFirstChild("Lights") })
+PostFX.setMotionBlurAllowed(false)
+Prompts.start()
+AmbientDust.start()
 
-local settings = { music = 0.6, grain = true, flicker = true }
 local inMenu = true
+local titleScreen = true -- «нажми любую клавишу» перед меню
 local fl = nil
 
 -- отключаем управление, пока мы в меню
@@ -4121,7 +5424,8 @@ pcall(function()
 end)
 
 -- ЗВУК ----------------------------------------------------------------------
-local menuMusic = Sound.make("MenuMusic", nil, { Looped = true, Volume = settings.music })
+-- громкость задают SoundGroup из настроек; тут только кроссфейд меню ↔ лобби
+local menuMusic = Sound.make("MenuMusic", nil, { Looped = true, Volume = 1 })
 if menuMusic then
 	menuMusic:Play()
 end
@@ -4129,10 +5433,10 @@ local ambience = Sound.make("Ambience", nil, { Looped = true, Volume = 0 })
 
 local function applyVolumes()
 	if menuMusic then
-		menuMusic.Volume = inMenu and settings.music or 0
+		TweenService:Create(menuMusic, TweenInfo.new(1.5), { Volume = inMenu and 1 or 0 }):Play()
 	end
 	if ambience then
-		ambience.Volume = inMenu and 0 or settings.music * 0.55
+		TweenService:Create(ambience, TweenInfo.new(2.5), { Volume = inMenu and 0 or 0.6 }):Play()
 	end
 end
 
@@ -4266,13 +5570,62 @@ local buttonsHolder = UI.new("Frame", {
 	Size = UDim2.fromOffset(380, 300),
 	Position = UDim2.fromScale(0.06, 0.45),
 	BackgroundTransparency = 1,
+	Visible = false,
 	ZIndex = 6,
 	Parent = menu,
 }, {
 	UI.new("UIListLayout", { Padding = UDim.new(0, 6), SortOrder = Enum.SortOrder.LayoutOrder }),
 })
+-- описание выбранного пункта (как в больших играх)
+local menuHint = UI.label({
+	Text = "",
+	Font = UI.FontMono,
+	TextSize = 15,
+	TextColor3 = Colors.Dim,
+	Size = UDim2.fromOffset(420, 40),
+	Position = UDim2.new(0.06, 14, 0.45, 300),
+	TextYAlignment = Enum.TextYAlignment.Top,
+	ZIndex = 6,
+	Parent = menu,
+})
+
+-- кинематографичные полосы сверху и снизу
+local letterbox = {}
+for i, anchor in ipairs({ Vector2.new(0, 0), Vector2.new(0, 1) }) do
+	letterbox[i] = UI.new("Frame", {
+		Size = UDim2.new(1, 0, 0.085, 0),
+		Position = UDim2.fromScale(0, anchor.Y),
+		AnchorPoint = anchor,
+		BackgroundColor3 = Color3.new(0, 0, 0),
+		BorderSizePixel = 0,
+		ZIndex = 4,
+		Parent = gui,
+	})
+end
+
+-- титульный экран
+local pressAny = UI.label({
+	Text = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled and "КОСНИСЬ ЭКРАНА" or "НАЖМИ ЛЮБУЮ КЛАВИШУ",
+	Font = UI.FontMono,
+	TextSize = 18,
+	TextColor3 = Colors.Text,
+	TextXAlignment = Enum.TextXAlignment.Left,
+	Size = UDim2.fromOffset(420, 24),
+	Position = UDim2.new(0.06, 10, 0.5, 0),
+	ZIndex = 6,
+	Parent = menu,
+})
+task.spawn(function()
+	while titleScreen do
+		UI.tween(pressAny, 1.1, { TextTransparency = 0.75 }, Enum.EasingStyle.Sine)
+		task.wait(1.15)
+		UI.tween(pressAny, 1.1, { TextTransparency = 0 }, Enum.EasingStyle.Sine)
+		task.wait(1.15)
+	end
+end)
+
 local menuButtons = {}
-local function menuButton(text, order, onClick)
+local function menuButton(text, order, description, onClick)
 	local b = UI.button({
 		Text = "  " .. text,
 		Size = UDim2.new(1, 0, 0, 58),
@@ -4284,6 +5637,7 @@ local function menuButton(text, order, onClick)
 		NoStroke = true,
 		Parent = buttonsHolder,
 	}, onClick)
+	b.SelectionImageObject = UI.new("Frame", { BackgroundTransparency = 1 })
 	local line = UI.new("Frame", {
 		Size = UDim2.new(0, 0, 0, 2),
 		Position = UDim2.new(0, 10, 1, -6),
@@ -4292,14 +5646,21 @@ local function menuButton(text, order, onClick)
 		ZIndex = 6,
 		Parent = b,
 	})
-	b.MouseEnter:Connect(function()
+	local function focusIn()
 		b.Text = "› " .. text
 		UI.tween(line, 0.2, { Size = UDim2.new(0.75, 0, 0, 2) })
-	end)
-	b.MouseLeave:Connect(function()
+		menuHint.Text = description
+		menuHint.TextTransparency = 1
+		UI.tween(menuHint, 0.25, { TextTransparency = 0 })
+	end
+	local function focusOut()
 		b.Text = "  " .. text
 		UI.tween(line, 0.25, { Size = UDim2.new(0, 0, 0, 2) })
-	end)
+	end
+	b.MouseEnter:Connect(focusIn)
+	b.MouseLeave:Connect(focusOut)
+	b.SelectionGained:Connect(focusIn)
+	b.SelectionLost:Connect(focusOut)
 	table.insert(menuButtons, b)
 	return b
 end
@@ -4387,8 +5748,9 @@ menuConn = RunService.RenderStepped:Connect(function(dt)
 	menuLight.CFrame = CFrame.lookAt(origin, aim + Vector3.new(math.noise(t * 3, 2), math.noise(t * 3, 4), 0) * 0.6)
 
 	-- мигание
+	local flickerOn = Settings.get("flicker")
 	local on = not blackout
-	if settings.flicker and not blackout then
+	if flickerOn and not blackout then
 		if t > burstUntil and math.random() < dt * 0.5 then
 			burstUntil = t + 0.1 + math.random() * 0.45
 		end
@@ -4400,16 +5762,25 @@ menuConn = RunService.RenderStepped:Connect(function(dt)
 	spill.Enabled = on
 	spot.Brightness = 3.7 + math.noise(t * 6, 1) * 0.6
 	for _, b in ipairs(menuButtons) do
-		if t < burstUntil and settings.flicker then
+		if t < burstUntil and flickerOn then
 			b.TextTransparency = on and 0 or 0.65
 		elseif b.TextTransparency > 0.5 then
 			b.TextTransparency = 0
 		end
 	end
 
+	-- кинофокус на Пациенте: фон за ним мягко размыт
+	local root = menuMonster and menuMonster.Parent and menuMonster:FindFirstChild("HumanoidRootPart")
+	if root and root:IsA("BasePart") and root.Position.Y > -100 then
+		PostFX.setFocus((root.Position - cam.CFrame.Position).Magnitude)
+	else
+		PostFX.setFocus(40)
+	end
+
 	-- зерно/царапины
-	grain.Visible = settings.grain
-	if settings.grain then
+	local grainOn = Settings.get("grain")
+	grain.Visible = grainOn
+	if grainOn then
 		for _, s in ipairs(scratches) do
 			if math.random() < 0.15 then
 				s.Position = UDim2.fromScale(math.random(), 0)
@@ -4554,6 +5925,20 @@ local gateSub = UI.label({
 	Parent = gatePanel,
 })
 local _ = gateSub
+-- полоса отсчёта и места в очереди
+local gateBar = UI.new("Frame", {
+	Size = UDim2.new(1, -24, 0, 3),
+	Position = UDim2.new(0, 12, 1, -8),
+	BackgroundColor3 = Color3.fromRGB(30, 14, 14),
+	BorderSizePixel = 0,
+	Parent = gatePanel,
+})
+local gateFill = UI.new("Frame", {
+	Size = UDim2.fromScale(1, 1),
+	BackgroundColor3 = Colors.BrightRed,
+	BorderSizePixel = 0,
+	Parent = gateBar,
+})
 
 -- ============================ ОКНА ============================
 local windows = {}
@@ -5019,59 +6404,15 @@ local function renderBP(scrollToCurrent)
 end
 
 -- ---------- НАСТРОЙКИ ----------
-local setWin = UI.window(gui, "НАСТРОЙКИ", UDim2.fromOffset(520, 380))
+local settingsMenu = SettingsMenu.build(gui, { footer = true })
+local setWin = settingsMenu.window
 table.insert(windows, setWin)
-local setList = UI.new("Frame", {
-	Size = UDim2.fromScale(1, 1),
-	BackgroundTransparency = 1,
-	Parent = setWin.content,
-}, { UI.new("UIListLayout", { Padding = UDim.new(0, 10), SortOrder = Enum.SortOrder.LayoutOrder }) })
-local function settingRow(order, labelText)
-	local row = UI.new("Frame", { Size = UDim2.new(1, 0, 0, 44), BackgroundTransparency = 1, LayoutOrder = order, Parent = setList })
-	UI.label({ Text = labelText, Font = UI.FontBold, TextSize = 18, Size = UDim2.new(0.55, 0, 1, 0), Parent = row })
-	return row
-end
-local musicRow = settingRow(1, "ГРОМКОСТЬ МУЗЫКИ")
-local musicValue = UI.label({ Text = "", Font = UI.FontMono, TextSize = 18, TextXAlignment = Enum.TextXAlignment.Center, Size = UDim2.fromOffset(70, 44), Position = UDim2.new(1, -150, 0, 0), Parent = musicRow })
-local function refreshSettings() end
-UI.button({ Text = "−", Size = UDim2.fromOffset(40, 40), Position = UDim2.new(1, -196, 0, 2), Parent = musicRow }, function()
-	settings.music = math.max(0, settings.music - 0.1)
-	applyVolumes()
-	refreshSettings()
-end)
-UI.button({ Text = "+", Size = UDim2.fromOffset(40, 40), Position = UDim2.new(1, -76, 0, 2), Parent = musicRow }, function()
-	settings.music = math.min(1, settings.music + 0.1)
-	applyVolumes()
-	refreshSettings()
-end)
-local grainRow = settingRow(2, "ЗЕРНО И ЦАРАПИНЫ")
-local grainBtn = UI.button({ Text = "", TextSize = 16, Size = UDim2.fromOffset(150, 40), Position = UDim2.new(1, -196, 0, 2), Parent = grainRow }, function()
-	settings.grain = not settings.grain
-	refreshSettings()
-end)
-local flickRow = settingRow(3, "МЕРЦАНИЕ СВЕТА В МЕНЮ")
-local flickBtn = UI.button({ Text = "", TextSize = 16, Size = UDim2.fromOffset(150, 40), Position = UDim2.new(1, -196, 0, 2), Parent = flickRow }, function()
-	settings.flicker = not settings.flicker
-	refreshSettings()
-end)
-local statsLabel = UI.label({
-	Text = "",
-	Font = UI.FontMono,
-	TextSize = 15,
-	TextColor3 = Colors.Dim,
-	Size = UDim2.new(1, 0, 0, 90),
-	LayoutOrder = 4,
-	TextYAlignment = Enum.TextYAlignment.Top,
-	Parent = setList,
-})
-refreshSettings = function()
-	musicValue.Text = math.floor(settings.music * 100 + 0.5) .. "%"
-	grainBtn.Text = settings.grain and "ВКЛ" or "ВЫКЛ"
-	flickBtn.Text = settings.flicker and "ВКЛ" or "ВЫКЛ"
+local function refreshSettings()
+	settingsMenu.refresh()
 	local d = ClientData.get() or {}
 	local s = d.stats or {}
-	statsLabel.Text = string.format(
-		"СТАТИСТИКА\nраундов: %d   побегов: %d   смертей: %d\nжетонов возрождения: %d",
+	settingsMenu.footer.Text = string.format(
+		"СТАТИСТИКА   раундов: %d   побегов: %d   смертей: %d\nжетонов возрождения: %d",
 		s.games or 0,
 		s.escapes or 0,
 		s.deaths or 0,
@@ -5112,20 +6453,19 @@ local function play()
 		menuConn:Disconnect()
 	end
 	stopTitle()
+	GuiService.SelectedObject = nil
 	menu.Visible = false
 	menuLight:Destroy()
 	if menuMonster then
 		menuMonster.Parent = nil -- только у тебя на экране
 	end
 	local cam = workspace.CurrentCamera
-	cam.CameraType = Enum.CameraType.Custom
-	cam.FieldOfView = 70
+	cam.FieldOfView = Settings.get("fov")
 	local char = player.Character or player.CharacterAdded:Wait()
 	local hum = char:WaitForChild("Humanoid")
-	cam.CameraSubject = hum
-	if controls then
-		controls:Enable()
-	end
+	local hrp = char:WaitForChild("HumanoidRootPart")
+	PostFX.setFocus(nil)
+	PostFX.setMotionBlurAllowed(true)
 	pcall(function()
 		StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, true)
 	end)
@@ -5135,22 +6475,81 @@ local function play()
 	applyVolumes()
 	if not fl then
 		fl = FL.start()
+		PostFX.exclude(fl.part)
+	end
+
+	-- пролёт камеры сверху к персонажу, полосы уезжают
+	local focusPoint = hrp.Position + Vector3.new(0, 1.5, 0)
+	local back = -hrp.CFrame.LookVector
+	local startCF = CFrame.lookAt(focusPoint + back * 4 + hrp.CFrame.RightVector * 7 + Vector3.new(0, 15, 0), focusPoint)
+	local endCF = CFrame.lookAt(focusPoint + back * 12 + Vector3.new(0, 3, 0), focusPoint)
+	cam.CameraType = Enum.CameraType.Scriptable
+	cam.CFrame = startCF
+	fadeTo(1, 1.3)
+	for _, bar in ipairs(letterbox) do
+		UI.tween(bar, 2.2, { Size = UDim2.new(1, 0, 0, 0) }, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut)
+	end
+	local swoop = TweenService:Create(cam, TweenInfo.new(2.4, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut), { CFrame = endCF })
+	swoop:Play()
+	swoop.Completed:Wait()
+	cam.CameraSubject = hum
+	cam.CameraType = Enum.CameraType.Custom
+	if controls then
+		controls:Enable()
 	end
 	hud.Visible = true
-	fadeTo(1, 1.3)
-	task.delay(1.5, function()
+	hud.Position = UDim2.fromOffset(0, 12)
+	UI.tween(hud, 0.6, { Position = UDim2.new() })
+	task.delay(0.6, function()
 		toast("Встань в светящийся круг у врат, чтобы попасть в больницу.", Colors.Text)
 		task.wait(1)
 		toast("Торговец в капюшоне — магазин. Доска объявлений — батлпасс. F — фонарик.", Colors.Dim)
 	end)
 end
 
-menuButton("ИГРАТЬ", 1, function()
+menuButton("ИГРАТЬ", 1, "Спустись в зал ожидания и встань у врат.\nДо 4 игроков в одной смене.", function()
 	task.spawn(play)
 end)
-menuButton("МАГАЗИН", 2, openShop)
-menuButton("БАТЛПАСС", 3, openBP)
-menuButton("НАСТРОЙКИ", 4, openSettings)
+menuButton("МАГАЗИН", 2, "Фонарики, титулы и наборы монет.", openShop)
+menuButton("БАТЛПАСС", 3, "Сезон «" .. BattlePass.SeasonName .. "»: награды за каждую смену.", openBP)
+menuButton("НАСТРОЙКИ", 4, "Звук, графика, камера и субтитры.", openSettings)
+
+-- выход с титульного экрана: любая клавиша / клик / касание / кнопка геймпада
+local function leaveTitle()
+	if not titleScreen then
+		return
+	end
+	titleScreen = false
+	Sound.play("UIClick", nil, { Volume = 0.8 })
+	UI.tween(pressAny, 0.25, { TextTransparency = 1 })
+	task.wait(0.25)
+	pressAny.Visible = false
+	buttonsHolder.Visible = true
+	for i, b in ipairs(menuButtons) do
+		b.TextTransparency = 1
+		task.delay(i * 0.09, function()
+			UI.tween(b, 0.45, { TextTransparency = 0 }, Enum.EasingStyle.Quint)
+		end)
+	end
+	if UserInputService.GamepadEnabled then
+		GuiService.SelectedObject = menuButtons[1]
+	end
+end
+UserInputService.InputBegan:Connect(function(input)
+	if not titleScreen then
+		return
+	end
+	local t = input.UserInputType
+	if t == Enum.UserInputType.Keyboard or t == Enum.UserInputType.MouseButton1 or t == Enum.UserInputType.Touch or t == Enum.UserInputType.Gamepad1 then
+		task.spawn(leaveTitle)
+	end
+end)
+-- геймпад подключили в меню — сразу даём выделение
+UserInputService.LastInputTypeChanged:Connect(function(t)
+	if inMenu and not titleScreen and t == Enum.UserInputType.Gamepad1 and not GuiService.SelectedObject then
+		GuiService.SelectedObject = menuButtons[1]
+	end
+end)
 
 for i, info in ipairs({ { "🛒 МАГАЗИН", openShop }, { "🩸 БАТЛПАСС", openBP }, { "⚙ НАСТРОЙКИ", openSettings } }) do
 	UI.button({
@@ -5250,6 +6649,7 @@ task.spawn(function()
 			local max = m:GetAttribute("Max") or Config.MaxPlayersPerRound
 			local left = m:GetAttribute("Time") or 0
 			gateTitle.Text = string.format("ВРАТА %s   ·   %d / %d   ·   ОТПРАВКА ЧЕРЕЗ %d", ROMAN[n] or tostring(n), count, max, left)
+			UI.tween(gateFill, 0.25, { Size = UDim2.fromScale(math.clamp(left / math.max(1, Config.QueueCountdown), 0, 1), 1) }, Enum.EasingStyle.Linear)
 			if left ~= lastTime then
 				lastTime = left
 				if left > 0 and left <= 5 then
@@ -5298,4 +6698,218 @@ end)
 </Item>
 </Item>
 <Item class="SoundService" referent="RBX00000703"><Properties><string name="Name">SoundService</string><token name="AmbientReverb">14</token><float name="RolloffScale">1</float></Properties></Item>
+<Item class="ReplicatedFirst" referent="RBXP13AAA000008"><Properties><string name="Name">ReplicatedFirst</string></Properties><Item class="LocalScript" referent="RBXP13AAA000009"><Properties><string name="Name">Loading</string><ProtectedString name="Source"><![CDATA[--[[
+	Экран загрузки (ReplicatedFirst): заменяет стандартный, показывает
+	предупреждение о вспышках и совет про наушники при первом входе,
+	реальный прогресс загрузки ассетов и советы. Уходит, когда готов интерфейс плейса.
+]]
+local ReplicatedFirst = game:GetService("ReplicatedFirst")
+local Players = game:GetService("Players")
+local ContentProvider = game:GetService("ContentProvider")
+local TweenService = game:GetService("TweenService")
+local TeleportService = game:GetService("TeleportService")
+local RunService = game:GetService("RunService")
+
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+local TIPS = {
+	"Пациент слышит бег. Если он рядом — иди шагом.",
+	"Луч фонарика видно издалека. Иногда темнота — твой друг.",
+	"В шкафчике можно переждать погоню. Но не вечно.",
+	"Батарейки лежат в палатах. Береги заряд.",
+	"Аварийные лампы мигают быстрее, когда генератор работает.",
+	"Если свет начал мигать без причины — оно уже близко.",
+	"Предохранитель несут в генераторную. Только один за раз.",
+	"Субтитры и тряску камеры можно настроить в меню (P).",
+}
+
+local FONT_TITLE = Enum.Font.Oswald
+local FONT_MONO = Enum.Font.RobotoMono
+
+local arrivingGui = TeleportService:GetArrivingTeleportGui()
+local teleported = arrivingGui ~= nil or TeleportService:GetLocalPlayerTeleportData() ~= nil
+
+local gui = Instance.new("ScreenGui")
+gui.Name = "P13_Loading"
+gui.IgnoreGuiInset = true
+gui.ResetOnSpawn = false
+gui.DisplayOrder = 1000
+gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+local root = Instance.new("CanvasGroup")
+root.Size = UDim2.fromScale(1, 1)
+root.BackgroundColor3 = Color3.new(0, 0, 0)
+root.BorderSizePixel = 0
+root.Parent = gui
+
+local function label(props)
+	local l = Instance.new("TextLabel")
+	l.BackgroundTransparency = 1
+	l.TextColor3 = Color3.fromRGB(222, 212, 200)
+	l.Font = FONT_MONO
+	l.TextSize = 16
+	l.TextWrapped = true
+	for k, v in pairs(props) do
+		l[k] = v
+	end
+	l.Parent = props.Parent or root
+	return l
+end
+
+-- 1) предупреждение (только при первом входе, не после телепорта)
+local warning = Instance.new("Frame")
+warning.Size = UDim2.fromScale(1, 1)
+warning.BackgroundTransparency = 1
+warning.Visible = not teleported
+warning.Parent = root
+label({
+	Parent = warning,
+	Text = "ВНИМАНИЕ",
+	Font = FONT_TITLE,
+	TextSize = 34,
+	TextColor3 = Color3.fromRGB(235, 40, 40),
+	Size = UDim2.new(1, 0, 0, 40),
+	Position = UDim2.fromScale(0, 0.36),
+})
+label({
+	Parent = warning,
+	Text = "В игре есть мерцающий свет, резкие вспышки и громкие звуки.\nМерцание и тряску камеры можно ослабить в настройках.",
+	TextSize = 17,
+	Size = UDim2.new(0.7, 0, 0, 60),
+	Position = UDim2.new(0.15, 0, 0.36, 52),
+})
+label({
+	Parent = warning,
+	Text = "🎧  играй в наушниках",
+	TextSize = 15,
+	TextColor3 = Color3.fromRGB(125, 115, 110),
+	Size = UDim2.new(1, 0, 0, 24),
+	Position = UDim2.new(0, 0, 0.36, 130),
+})
+
+-- 2) основной экран загрузки
+local main = Instance.new("CanvasGroup")
+main.Size = UDim2.fromScale(1, 1)
+main.BackgroundTransparency = 1
+main.GroupTransparency = teleported and 0 or 1
+main.Parent = root
+
+label({
+	Parent = main,
+	Text = "ПАЛАТА 13",
+	Font = FONT_TITLE,
+	TextSize = 64,
+	TextXAlignment = Enum.TextXAlignment.Left,
+	Size = UDim2.fromOffset(600, 70),
+	Position = UDim2.new(0.06, 0, 1, -230),
+})
+local status = label({
+	Parent = main,
+	Text = teleported and "ВХОД В КОРПУС" or "ЗАГРУЗКА",
+	TextSize = 15,
+	TextColor3 = Color3.fromRGB(150, 14, 14),
+	TextXAlignment = Enum.TextXAlignment.Left,
+	Size = UDim2.fromOffset(600, 20),
+	Position = UDim2.new(0.06, 4, 1, -158),
+})
+local tip = label({
+	Parent = main,
+	Text = TIPS[math.random(1, #TIPS)],
+	TextSize = 16,
+	TextColor3 = Color3.fromRGB(125, 115, 110),
+	TextXAlignment = Enum.TextXAlignment.Left,
+	Size = UDim2.new(0.6, 0, 0, 40),
+	Position = UDim2.new(0.06, 4, 1, -128),
+})
+local barBack = Instance.new("Frame")
+barBack.Size = UDim2.new(0.88, 0, 0, 2)
+barBack.Position = UDim2.new(0.06, 0, 1, -64)
+barBack.BackgroundColor3 = Color3.fromRGB(30, 14, 14)
+barBack.BorderSizePixel = 0
+barBack.Parent = main
+local barFill = Instance.new("Frame")
+barFill.Size = UDim2.fromScale(0, 1)
+barFill.BackgroundColor3 = Color3.fromRGB(200, 30, 30)
+barFill.BorderSizePixel = 0
+barFill.Parent = barBack
+local percent = label({
+	Parent = main,
+	Text = "0%",
+	TextSize = 14,
+	TextXAlignment = Enum.TextXAlignment.Right,
+	Size = UDim2.fromOffset(100, 20),
+	Position = UDim2.new(0.94, -100, 1, -90),
+})
+
+gui.Parent = playerGui
+ReplicatedFirst:RemoveDefaultLoadingScreen()
+if arrivingGui then
+	arrivingGui:Destroy()
+end
+
+local t0 = os.clock()
+local alive = true
+local shown = 0
+local maxQueue = 1
+
+local conn = RunService.RenderStepped:Connect(function(dt)
+	local queue = ContentProvider.RequestQueueSize
+	maxQueue = math.max(maxQueue, queue)
+	local target = (1 - queue / maxQueue) * (game:IsLoaded() and 1 or 0.85)
+	shown += (math.max(shown, target) - shown) * math.min(1, dt * 4)
+	barFill.Size = UDim2.fromScale(shown, 1)
+	percent.Text = math.floor(shown * 100) .. "%"
+	-- лёгкое «дыхание» полосы
+	barFill.BackgroundTransparency = 0.15 + math.sin(os.clock() * 4) * 0.15
+end)
+
+task.spawn(function()
+	while alive do
+		task.wait(4.5)
+		if not alive then
+			break
+		end
+		TweenService:Create(tip, TweenInfo.new(0.4), { TextTransparency = 1 }):Play()
+		task.wait(0.45)
+		tip.Text = TIPS[math.random(1, #TIPS)]
+		TweenService:Create(tip, TweenInfo.new(0.4), { TextTransparency = 0 }):Play()
+	end
+end)
+
+if not teleported then
+	task.wait(3.2)
+	TweenService:Create(warning, TweenInfo.new(0.6), { Position = UDim2.fromScale(0, -0.03) }):Play()
+	for _, d in ipairs(warning:GetChildren()) do
+		if d:IsA("TextLabel") then
+			TweenService:Create(d, TweenInfo.new(0.6), { TextTransparency = 1 }):Play()
+		end
+	end
+	task.wait(0.4)
+	TweenService:Create(main, TweenInfo.new(0.8), { GroupTransparency = 0 }):Play()
+end
+
+if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
+-- ждём, пока клиент плейса построит свой интерфейс (лобби: LobbyUI, больница: HUD)
+local waited = 0
+while waited < 20 and not (playerGui:FindFirstChild("LobbyUI") or playerGui:FindFirstChild("HUD")) do
+	waited += task.wait(0.1)
+end
+while os.clock() - t0 < (teleported and 1.5 or 5) do
+	task.wait(0.1)
+end
+status.Text = "ГОТОВО"
+shown = 1
+task.wait(0.4)
+
+alive = false
+local fade = TweenService:Create(root, TweenInfo.new(1.2, Enum.EasingStyle.Quad), { GroupTransparency = 1 })
+fade:Play()
+fade.Completed:Wait()
+conn:Disconnect()
+gui:Destroy()
+]]></ProtectedString></Properties></Item>
+</Item>
 </roblox>

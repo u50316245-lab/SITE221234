@@ -10,7 +10,7 @@ if not folder then
 	folder.Parent = ReplicatedStorage
 end
 
-local events = { "DataUpdated", "Notify", "Action", "Jumpscare", "RoundUpdate", "Teleporting", "Power", "Results", "Scare" }
+local events = { "DataUpdated", "Notify", "Action", "Jumpscare", "RoundUpdate", "Teleporting", "Power", "Results", "Scare", "SaveSettings" }
 local functions = { "GetData", "ShopRequest", "ClaimReward", "UseRevive" }
 
 for _, name in ipairs(events) do

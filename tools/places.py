@@ -77,7 +77,8 @@ def child(parent, name, cls=None):
 
 
 def ensure_child(parent, name, cls):
-    return child(parent, name, cls) or new_item(parent, cls, name)
+    found = child(parent, name, cls)
+    return found if found is not None else new_item(parent, cls, name)
 
 
 def service(root, cls):
@@ -193,7 +194,7 @@ def container(root, path):
 def sync_scripts(root, place):
     for cont, cls, name, f in manifest(place):
         parent = container(root, cont)
-        item = child(parent, name, cls) or new_item(parent, cls, name)
+        item = ensure_child(parent, name, cls)
         with open(f, encoding="utf-8") as fh:
             source = fh.read()
         e = get_prop(item, "Source")

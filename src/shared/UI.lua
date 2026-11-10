@@ -120,7 +120,7 @@ function UI.button(props, onClick)
 	end
 	local normalColor = btn.TextColor3
 	local hovering = false
-	btn.MouseEnter:Connect(function()
+	local function hoverIn()
 		hovering = true
 		Sound.play("UIHover", nil, { Volume = 0.5, PlaybackSpeed = 0.9 + math.random() * 0.2 })
 		UI.tween(btn, 0.12, { TextColor3 = UI.Colors.BrightRed })
@@ -134,12 +134,17 @@ function UI.button(props, onClick)
 			end
 			btn.TextTransparency = 0
 		end)
-	end)
-	btn.MouseLeave:Connect(function()
+	end
+	local function hoverOut()
 		hovering = false
 		btn.TextTransparency = 0
 		UI.tween(btn, 0.2, { TextColor3 = normalColor })
-	end)
+	end
+	btn.MouseEnter:Connect(hoverIn)
+	btn.MouseLeave:Connect(hoverOut)
+	-- геймпад: выделение работает как наведение мышью
+	btn.SelectionGained:Connect(hoverIn)
+	btn.SelectionLost:Connect(hoverOut)
 	btn.Activated:Connect(function()
 		Sound.play("UIClick", nil, { Volume = 0.7 })
 		if onClick then
@@ -150,7 +155,7 @@ function UI.button(props, onClick)
 end
 
 -- чёрная виньетка по краям экрана
-function UI.vignette(parent, strength)
+function UI.vignette(parent, strength, color)
 	strength = strength or 0
 	local holder = UI.new("Frame", {
 		Name = "Vignette",
@@ -164,7 +169,7 @@ function UI.vignette(parent, strength)
 			Size = size,
 			Position = pos,
 			AnchorPoint = anchor,
-			BackgroundColor3 = Color3.new(0, 0, 0),
+			BackgroundColor3 = color or Color3.new(0, 0, 0),
 			BorderSizePixel = 0,
 			BackgroundTransparency = strength,
 			ZIndex = 1,
@@ -300,10 +305,12 @@ function UI.toast(screenGui, text, color)
 		AutomaticSize = Enum.AutomaticSize.Y,
 		TextXAlignment = Enum.TextXAlignment.Left,
 		ZIndex = 51,
+		TextTransparency = 1,
 		Parent = holder,
-	}, nil)
+	})
 	UI.padding(10).Parent = t
 	UI.stroke(UI.Colors.Red, 1, 0.3).Parent = t
+	UI.tween(t, 0.25, { TextTransparency = 0 })
 	task.delay(4, function()
 		if t.Parent then
 			UI.tween(t, 0.4, { TextTransparency = 1, BackgroundTransparency = 1 })
