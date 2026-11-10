@@ -18,6 +18,13 @@ local UI = require(Shared:WaitForChild("UI"))
 local ClientData = require(Shared:WaitForChild("ClientData"))
 local Animator = require(Shared:WaitForChild("MonsterAnimator"))
 local FL = require(Shared:WaitForChild("FlashlightClient"))
+local Settings = require(Shared:WaitForChild("Settings"))
+local SettingsMenu = require(Shared:WaitForChild("SettingsMenu"))
+local PostFX = require(Shared:WaitForChild("PostFX"))
+local CameraFX = require(Shared:WaitForChild("CameraFX"))
+local Subtitles = require(Shared:WaitForChild("Subtitles"))
+local Prompts = require(Shared:WaitForChild("Prompts"))
+local AmbientDust = require(Shared:WaitForChild("AmbientDust"))
 local Remotes = ReplicatedStorage:WaitForChild("Remotes")
 
 local P = Config.Player
@@ -28,8 +35,15 @@ pcall(function()
 end)
 
 ClientData.start()
+Settings.start()
+Sound.bindSettings(Settings)
 Animator.start()
 local fl = FL.start()
+PostFX.start({ lightsRoot = workspace:WaitForChild("Map"):WaitForChild("Lights") })
+PostFX.exclude(fl.part)
+CameraFX.start()
+Prompts.start()
+AmbientDust.start()
 
 -- GUI -----------------------------------------------------------------------
 local gui = UI.new("ScreenGui", {
@@ -41,6 +55,15 @@ local gui = UI.new("ScreenGui", {
 	Parent = player:WaitForChild("PlayerGui"),
 })
 UI.vignette(gui, 0.6)
+Subtitles.start(gui)
+-- красная виньетка страха пульсирует в такт сердцу
+local fearVignette = UI.vignette(gui, 1, Color3.fromRGB(90, 0, 0))
+local fearEdges = {}
+for _, f in ipairs(fearVignette:GetChildren()) do
+	if f:IsA("Frame") then
+		table.insert(fearEdges, f)
+	end
+end
 
 local function bar(name, yOffset, color, text)
 	local holder = UI.new("Frame", {
@@ -114,7 +137,7 @@ local carryLabel = UI.label({
 	TextColor3 = Colors.Gold,
 	TextXAlignment = Enum.TextXAlignment.Center,
 	Size = UDim2.fromOffset(520, 22),
-	Position = UDim2.new(0.5, 0, 0, 72),
+	Position = UDim2.new(0.5, 0, 0, 88),
 	AnchorPoint = Vector2.new(0.5, 0),
 	TextStrokeTransparency = 0.4,
 	Visible = false,
@@ -177,6 +200,56 @@ local function showMessage(text, color, duration)
 			UI.tween(msg, 0.9, { TextTransparency = 1 })
 		end
 	end)
+end
+
+-- трекер цели: точки предохранителей под заголовком
+local pipsHolder = UI.new("Frame", {
+	Size = UDim2.fromOffset(200, 10),
+	Position = UDim2.new(0.5, 0, 0, 68),
+	AnchorPoint = Vector2.new(0.5, 0),
+	BackgroundTransparency = 1,
+	ZIndex = 5,
+	Parent = gui,
+}, {
+	UI.new("UIListLayout", {
+		FillDirection = Enum.FillDirection.Horizontal,
+		HorizontalAlignment = Enum.HorizontalAlignment.Center,
+		Padding = UDim.new(0, 8),
+		SortOrder = Enum.SortOrder.LayoutOrder,
+	}),
+})
+local pips = {}
+local objectiveScale = UI.new("UIScale", { Parent = objective })
+local lastInserted = nil
+local function refreshPips(inserted, needed)
+	if #pips ~= needed then
+		for _, p in ipairs(pips) do
+			p:Destroy()
+		end
+		pips = {}
+		for i = 1, needed do
+			pips[i] = UI.new("Frame", {
+				Size = UDim2.fromOffset(10, 10),
+				BackgroundColor3 = Color3.fromRGB(40, 30, 28),
+				LayoutOrder = i,
+				ZIndex = 5,
+				Parent = pipsHolder,
+			}, { UI.corner(5), UI.stroke(Colors.Gold, 1, 0.5) })
+		end
+	end
+	for i, p in ipairs(pips) do
+		p.BackgroundColor3 = i <= inserted and Colors.Gold or Color3.fromRGB(40, 30, 28)
+	end
+	if lastInserted and inserted > lastInserted then
+		objectiveScale.Scale = 1.25
+		UI.tween(objectiveScale, 0.5, { Scale = 1 }, Enum.EasingStyle.Back)
+		local p = pips[inserted]
+		if p then
+			p.Size = UDim2.fromOffset(18, 18)
+			UI.tween(p, 0.4, { Size = UDim2.fromOffset(10, 10) }, Enum.EasingStyle.Back)
+		end
+	end
+	lastInserted = inserted
 end
 
 -- оверлей шкафчика: смотрим сквозь щели
@@ -242,6 +315,145 @@ task.delay(1, function()
 	UI.tween(fade, 2.5, { BackgroundTransparency = 1 })
 end)
 
+-- ТИТУЛЬНАЯ КАРТОЧКА ГЛАВЫ (когда раунд начался) ---------------------------
+local chapterShown = false
+local function showChapterCard()
+	if chapterShown then
+		return
+	end
+	chapterShown = true
+	local ch = Config.Chapter or {}
+	local card = UI.new("Frame", {
+		Name = "Chapter",
+		Size = UDim2.fromScale(1, 1),
+		BackgroundTransparency = 1,
+		ZIndex = 70,
+		Parent = gui,
+	})
+	local bars = {}
+	for i, anchor in ipairs({ Vector2.new(0, 0), Vector2.new(0, 1) }) do
+		bars[i] = UI.new("Frame", {
+			Size = UDim2.new(1, 0, 0, 0),
+			Position = UDim2.fromScale(0, anchor.Y),
+			AnchorPoint = anchor,
+			BackgroundColor3 = Color3.new(0, 0, 0),
+			BorderSizePixel = 0,
+			ZIndex = 70,
+			Parent = card,
+		})
+		UI.tween(bars[i], 0.9, { Size = UDim2.new(1, 0, 0.11, 0) }, Enum.EasingStyle.Quint)
+	end
+	local small = UI.label({
+		Text = Config.GameName .. "   ·   " .. (ch.number or ""),
+		Font = UI.FontMono,
+		TextSize = 16,
+		TextColor3 = Colors.Red,
+		TextXAlignment = Enum.TextXAlignment.Left,
+		TextTransparency = 1,
+		Size = UDim2.fromOffset(600, 20),
+		Position = UDim2.new(0.07, 4, 0.62, 0),
+		ZIndex = 71,
+		Parent = card,
+	})
+	local big = UI.label({
+		Text = "",
+		Font = UI.FontTitle,
+		TextSize = 58,
+		TextWrapped = false,
+		TextXAlignment = Enum.TextXAlignment.Left,
+		TextStrokeTransparency = 0.6,
+		Size = UDim2.fromOffset(900, 64),
+		Position = UDim2.new(0.07, 0, 0.62, 22),
+		ZIndex = 71,
+		Parent = card,
+	})
+	local goal = UI.label({
+		Text = ch.objective or "",
+		Font = UI.FontMono,
+		TextSize = 16,
+		TextColor3 = Colors.Dim,
+		TextXAlignment = Enum.TextXAlignment.Left,
+		TextTransparency = 1,
+		Size = UDim2.fromOffset(700, 40),
+		Position = UDim2.new(0.07, 4, 0.62, 92),
+		ZIndex = 71,
+		Parent = card,
+	})
+	task.wait(0.7)
+	UI.tween(small, 0.6, { TextTransparency = 0 })
+	local title = ch.title or ""
+	local len = utf8.len(title) or #title
+	for n = 1, len do
+		local cut = utf8.offset(title, n + 1)
+		big.Text = cut and string.sub(title, 1, cut - 1) or title
+		if n % 2 == 0 then
+			Sound.play("UIHover", nil, { Volume = 0.15, PlaybackSpeed = 0.6 + math.random() * 0.2 })
+		end
+		task.wait(0.055)
+	end
+	UI.tween(goal, 0.8, { TextTransparency = 0 })
+	task.wait(4.2)
+	for _, l in ipairs({ small, big, goal }) do
+		UI.tween(l, 1, { TextTransparency = 1, TextStrokeTransparency = 1 })
+	end
+	for _, b in ipairs(bars) do
+		UI.tween(b, 1.2, { Size = UDim2.new(1, 0, 0, 0) }, Enum.EasingStyle.Quint, Enum.EasingDirection.In)
+	end
+	task.wait(1.3)
+	card:Destroy()
+end
+local function checkRoundState()
+	if workspace:GetAttribute("RoundState") == "Playing" then
+		task.spawn(showChapterCard)
+	end
+end
+workspace:GetAttributeChangedSignal("RoundState"):Connect(checkRoundState)
+task.delay(3.5, checkRoundState)
+
+-- МЕНЮ ПАУЗЫ / НАСТРОЙКИ (P) ----------------------------------------------
+local settingsMenu = SettingsMenu.build(gui)
+local pauseWin = settingsMenu.window
+pauseWin.frame.ZIndex = 85
+-- в первом лице курсор заблокирован; модальная кнопка освобождает его, пока окно открыто
+local cursorFree = UI.new("TextButton", {
+	Text = "",
+	BackgroundTransparency = 1,
+	Size = UDim2.fromOffset(0, 0),
+	Modal = true,
+	Visible = false,
+	Parent = gui,
+})
+local function setPause(open)
+	if open then
+		settingsMenu.refresh()
+		pauseWin.open()
+	elseif pauseWin.frame.Visible then
+		pauseWin.close()
+	end
+	cursorFree.Visible = pauseWin.frame.Visible
+	PostFX.setMotionBlurAllowed(not pauseWin.frame.Visible)
+end
+pauseWin.onClose = function()
+	cursorFree.Visible = false
+	PostFX.setMotionBlurAllowed(true)
+end
+ContextActionService:BindAction("P13_Pause", function(_, state)
+	if state == Enum.UserInputState.Begin then
+		setPause(not pauseWin.frame.Visible)
+	end
+	return Enum.ContextActionResult.Sink
+end, false, Enum.KeyCode.P)
+UI.button({
+	Text = "⚙",
+	TextSize = 20,
+	Size = UDim2.fromOffset(38, 38),
+	Position = UDim2.new(1, -54, 0, 16),
+	ZIndex = 6,
+	Parent = gui,
+}, function()
+	setPause(not pauseWin.frame.Visible)
+end)
+
 Remotes.Notify.OnClientEvent:Connect(function(text, color)
 	UI.toast(gui, text, color)
 end)
@@ -260,7 +472,8 @@ local sprintHeld = false
 local exhausted = false
 local sprinting = false
 local bobT = 0
-local shake = 0
+local fearLevel = 0
+local heartPhase = 0
 local scaring = false
 
 ContextActionService:BindAction("Sprint", function(_, state)
@@ -307,7 +520,7 @@ if workspace:FindFirstChild("Monster") then
 	onMonster(workspace.Monster)
 end
 Animator.onFootstep = function(pos, intensity)
-	shake = math.max(shake, Animator.shakeAmountFor(pos) * (intensity or 1))
+	CameraFX.addTrauma(Animator.shakeAmountFor(pos) * (intensity or 1) * 0.45)
 end
 
 -- ЗВУКИ АТМОСФЕРЫ ------------------------------------------------------
@@ -475,6 +688,9 @@ local function jumpscare(m)
 	scaring = true
 	local cam = workspace.CurrentCamera
 	local oldFov = cam.FieldOfView
+	CameraFX.enabled = false
+	PostFX.setMotionBlurAllowed(false)
+	setPause(false)
 	cam.CameraType = Enum.CameraType.Scriptable
 	fl.disabled = true
 	local head = m and m:FindFirstChild("Head")
@@ -548,6 +764,8 @@ local function jumpscare(m)
 	blur:Destroy()
 	cam.FieldOfView = oldFov
 	cam.CameraType = Enum.CameraType.Custom
+	CameraFX.enabled = true
+	PostFX.setMotionBlurAllowed(true)
 	fl.disabled = false
 	scaring = false
 end
@@ -717,16 +935,33 @@ Remotes.Results.OnClientEvent:Connect(function(r)
 	resTitle.TextColor3 = r.escaped and Colors.Green or Colors.BrightRed
 	local mins = math.floor((r.time or 0) / 60)
 	local secs = (r.time or 0) % 60
-	resBody.Text = string.format(
-		"ВРЕМЯ: %d:%02d\nПРЕДОХРАНИТЕЛЕЙ ВСТАВЛЕНО ТОБОЙ: %d\n\n+%d МОНЕТ%s\n+%d XP БАТЛПАССА\n\nвозвращение в лобби...",
-		mins,
-		secs,
-		r.fuses or 0,
-		r.coins or 0,
-		r.vip and "  (VIP x2)" or "",
-		r.xp or 0
-	)
+	-- монеты и опыт «набегают», как в итогах больших игр
+	local function render(k)
+		resBody.Text = string.format(
+			"ВРЕМЯ: %d:%02d\nПРЕДОХРАНИТЕЛЕЙ ВСТАВЛЕНО ТОБОЙ: %d\n\n+%d МОНЕТ%s\n+%d XP БАТЛПАССА\n\nвозвращение в лобби...",
+			mins,
+			secs,
+			r.fuses or 0,
+			math.floor((r.coins or 0) * k + 0.5),
+			r.vip and "  (VIP x2)" or "",
+			math.floor((r.xp or 0) * k + 0.5)
+		)
+	end
+	render(0)
+	resTitle.TextTransparency = 1
+	UI.tween(resTitle, 1.2, { TextTransparency = 0 })
 	Sound.play(r.escaped and "Purchase" or "Static", nil, { Volume = 0.6 })
+	task.wait(0.9)
+	local t0 = os.clock()
+	while os.clock() - t0 < 1.4 do
+		local k = (os.clock() - t0) / 1.4
+		render(1 - (1 - k) ^ 3)
+		if math.random() < 0.35 then
+			Sound.play("UIHover", nil, { Volume = 0.12, PlaybackSpeed = 1 + k * 0.6 })
+		end
+		task.wait(0.03)
+	end
+	render(1)
 end)
 
 Remotes.Teleporting.OnClientEvent:Connect(function()
@@ -765,34 +1000,49 @@ RunService.RenderStepped:Connect(function(dt)
 		end
 		hum.WalkSpeed = sprinting and P.SprintSpeed or P.WalkSpeed
 
-		-- покачивание камеры при ходьбе + тряска от шагов монстра
+		-- покачивание камеры при ходьбе (повороты, крен и тряску даёт CameraFX)
 		if moving and hum.FloorMaterial ~= Enum.Material.Air then
 			bobT += dt * (sprinting and 13 or 8.5)
 		end
-		local amp = moving and (sprinting and 0.2 or 0.09) or 0
+		local amp = (moving and (sprinting and 0.2 or 0.09) or 0) * (0.4 + 0.6 * Settings.get("shake"))
 		local bob = Vector3.new(math.sin(bobT) * amp, math.abs(math.cos(bobT)) * amp * 1.3, 0)
-		shake = math.max(0, shake - dt * 2.5)
-		local sh = Vector3.new(math.random() - 0.5, math.random() - 0.5, 0) * shake * 0.5
-		hum.CameraOffset = hum.CameraOffset:Lerp(bob + sh, math.min(1, dt * 12))
-		local targetFov = sprinting and 80 or 70
+		hum.CameraOffset = hum.CameraOffset:Lerp(bob, math.min(1, dt * 12))
+		local targetFov = Settings.get("fov") + (sprinting and 10 or 0) + fearLevel * 4
 		cam.FieldOfView += (targetFov - cam.FieldOfView) * math.min(1, dt * 6)
 	elseif sprinting then
 		sprinting = false
 		Remotes.Action:FireServer("sprint", false)
 	end
 
-	-- сердцебиение от близости монстра
-	if heartbeat and not scaring then
-		local k = 0
-		if monster and monster.Parent and hrp and not dead then
-			local root = monster:FindFirstChild("HumanoidRootPart")
-			if root then
-				k = math.clamp(1 - (root.Position - hrp.Position).Magnitude / 70, 0, 1)
-			end
+	-- сердцебиение и страх от близости монстра
+	local k = 0
+	if monster and monster.Parent and hrp and not dead then
+		local root = monster:FindFirstChild("HumanoidRootPart")
+		if root then
+			k = math.clamp(1 - (root.Position - hrp.Position).Magnitude / 70, 0, 1)
 		end
+	end
+	if scaring then
+		k = 0
+	end
+	fearLevel = k
+	if heartbeat and not scaring then
 		heartbeat.Volume += (k * 1.3 - heartbeat.Volume) * math.min(1, dt * 3)
 		heartbeat.PlaybackSpeed = 0.85 + k * 0.75
 	end
+	PostFX.setFear(k)
+	CameraFX.fear = k
+	-- пульс виньетки: 60 → 140 ударов в минуту
+	heartPhase += dt * (1 + k * 1.35) * math.pi * 2
+	local beat = math.max(0, math.sin(heartPhase)) ^ 6
+	local vignetteAlpha = 1 - k * (0.35 + 0.35 * beat)
+	for _, edge in ipairs(fearEdges) do
+		edge.BackgroundTransparency = vignetteAlpha
+	end
+
+	-- в шкафу мир звучит глухо; без фонаря глаза медленно привыкают к темноте
+	Sound.setMuffle(hiding and 0.85 or 0)
+	PostFX.setAdaptation((player:GetAttribute("FlashlightOn") and not hiding) and 0 or 1)
 
 	-- HUD
 	local battery = player:GetAttribute("Battery") or 100
@@ -814,6 +1064,8 @@ RunService.RenderStepped:Connect(function(dt)
 		objective.Text = string.format("ПРЕДОХРАНИТЕЛИ  %d/%d", inserted, needed)
 		objective.TextColor3 = Colors.Text
 	end
+	pipsHolder.Visible = not workspace:GetAttribute("Power")
+	refreshPips(inserted, needed)
 	local left = workspace:GetAttribute("TimeLeft") or 0
 	timerLabel.Text = string.format("%02d:%02d", math.floor(left / 60), left % 60)
 	timerLabel.TextColor3 = left < 60 and Colors.BrightRed or Colors.Dim
