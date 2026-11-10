@@ -10,6 +10,8 @@ local UserInputService = game:GetService("UserInputService")
 local MarketplaceService = game:GetService("MarketplaceService")
 local TeleportService = game:GetService("TeleportService")
 local StarterGui = game:GetService("StarterGui")
+local GuiService = game:GetService("GuiService")
+local TweenService = game:GetService("TweenService")
 
 local player = Players.LocalPlayer
 local Shared = ReplicatedStorage:WaitForChild("Shared")
@@ -19,6 +21,11 @@ local UI = require(Shared:WaitForChild("UI"))
 local ClientData = require(Shared:WaitForChild("ClientData"))
 local BattlePass = require(Shared:WaitForChild("BattlePass"))
 local FL = require(Shared:WaitForChild("FlashlightClient"))
+local Settings = require(Shared:WaitForChild("Settings"))
+local SettingsMenu = require(Shared:WaitForChild("SettingsMenu"))
+local PostFX = require(Shared:WaitForChild("PostFX"))
+local Prompts = require(Shared:WaitForChild("Prompts"))
+local AmbientDust = require(Shared:WaitForChild("AmbientDust"))
 local Remotes = ReplicatedStorage:WaitForChild("Remotes")
 local Colors = UI.Colors
 
@@ -28,9 +35,15 @@ local menuMonster = Lobby:FindFirstChild("MenuMonster")
 local menuPoints = Lobby:FindFirstChild("MenuMonsterPoints")
 
 ClientData.start()
+Settings.start()
+Sound.bindSettings(Settings)
+PostFX.start({ lightsRoot = Lobby:FindFirstChild("Lights") })
+PostFX.setMotionBlurAllowed(false)
+Prompts.start()
+AmbientDust.start()
 
-local settings = { music = 0.6, grain = true, flicker = true }
 local inMenu = true
+local titleScreen = true -- «нажми любую клавишу» перед меню
 local fl = nil
 
 -- отключаем управление, пока мы в меню
@@ -52,7 +65,8 @@ pcall(function()
 end)
 
 -- ЗВУК ----------------------------------------------------------------------
-local menuMusic = Sound.make("MenuMusic", nil, { Looped = true, Volume = settings.music })
+-- громкость задают SoundGroup из настроек; тут только кроссфейд меню ↔ лобби
+local menuMusic = Sound.make("MenuMusic", nil, { Looped = true, Volume = 1 })
 if menuMusic then
 	menuMusic:Play()
 end
@@ -60,10 +74,10 @@ local ambience = Sound.make("Ambience", nil, { Looped = true, Volume = 0 })
 
 local function applyVolumes()
 	if menuMusic then
-		menuMusic.Volume = inMenu and settings.music or 0
+		TweenService:Create(menuMusic, TweenInfo.new(1.5), { Volume = inMenu and 1 or 0 }):Play()
 	end
 	if ambience then
-		ambience.Volume = inMenu and 0 or settings.music * 0.55
+		TweenService:Create(ambience, TweenInfo.new(2.5), { Volume = inMenu and 0 or 0.6 }):Play()
 	end
 end
 
@@ -197,13 +211,62 @@ local buttonsHolder = UI.new("Frame", {
 	Size = UDim2.fromOffset(380, 300),
 	Position = UDim2.fromScale(0.06, 0.45),
 	BackgroundTransparency = 1,
+	Visible = false,
 	ZIndex = 6,
 	Parent = menu,
 }, {
 	UI.new("UIListLayout", { Padding = UDim.new(0, 6), SortOrder = Enum.SortOrder.LayoutOrder }),
 })
+-- описание выбранного пункта (как в больших играх)
+local menuHint = UI.label({
+	Text = "",
+	Font = UI.FontMono,
+	TextSize = 15,
+	TextColor3 = Colors.Dim,
+	Size = UDim2.fromOffset(420, 40),
+	Position = UDim2.new(0.06, 14, 0.45, 300),
+	TextYAlignment = Enum.TextYAlignment.Top,
+	ZIndex = 6,
+	Parent = menu,
+})
+
+-- кинематографичные полосы сверху и снизу
+local letterbox = {}
+for i, anchor in ipairs({ Vector2.new(0, 0), Vector2.new(0, 1) }) do
+	letterbox[i] = UI.new("Frame", {
+		Size = UDim2.new(1, 0, 0.085, 0),
+		Position = UDim2.fromScale(0, anchor.Y),
+		AnchorPoint = anchor,
+		BackgroundColor3 = Color3.new(0, 0, 0),
+		BorderSizePixel = 0,
+		ZIndex = 4,
+		Parent = gui,
+	})
+end
+
+-- титульный экран
+local pressAny = UI.label({
+	Text = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled and "КОСНИСЬ ЭКРАНА" or "НАЖМИ ЛЮБУЮ КЛАВИШУ",
+	Font = UI.FontMono,
+	TextSize = 18,
+	TextColor3 = Colors.Text,
+	TextXAlignment = Enum.TextXAlignment.Left,
+	Size = UDim2.fromOffset(420, 24),
+	Position = UDim2.new(0.06, 10, 0.5, 0),
+	ZIndex = 6,
+	Parent = menu,
+})
+task.spawn(function()
+	while titleScreen do
+		UI.tween(pressAny, 1.1, { TextTransparency = 0.75 }, Enum.EasingStyle.Sine)
+		task.wait(1.15)
+		UI.tween(pressAny, 1.1, { TextTransparency = 0 }, Enum.EasingStyle.Sine)
+		task.wait(1.15)
+	end
+end)
+
 local menuButtons = {}
-local function menuButton(text, order, onClick)
+local function menuButton(text, order, description, onClick)
 	local b = UI.button({
 		Text = "  " .. text,
 		Size = UDim2.new(1, 0, 0, 58),
@@ -215,6 +278,7 @@ local function menuButton(text, order, onClick)
 		NoStroke = true,
 		Parent = buttonsHolder,
 	}, onClick)
+	b.SelectionImageObject = UI.new("Frame", { BackgroundTransparency = 1 })
 	local line = UI.new("Frame", {
 		Size = UDim2.new(0, 0, 0, 2),
 		Position = UDim2.new(0, 10, 1, -6),
@@ -223,14 +287,21 @@ local function menuButton(text, order, onClick)
 		ZIndex = 6,
 		Parent = b,
 	})
-	b.MouseEnter:Connect(function()
+	local function focusIn()
 		b.Text = "› " .. text
 		UI.tween(line, 0.2, { Size = UDim2.new(0.75, 0, 0, 2) })
-	end)
-	b.MouseLeave:Connect(function()
+		menuHint.Text = description
+		menuHint.TextTransparency = 1
+		UI.tween(menuHint, 0.25, { TextTransparency = 0 })
+	end
+	local function focusOut()
 		b.Text = "  " .. text
 		UI.tween(line, 0.25, { Size = UDim2.new(0, 0, 0, 2) })
-	end)
+	end
+	b.MouseEnter:Connect(focusIn)
+	b.MouseLeave:Connect(focusOut)
+	b.SelectionGained:Connect(focusIn)
+	b.SelectionLost:Connect(focusOut)
 	table.insert(menuButtons, b)
 	return b
 end
@@ -318,8 +389,9 @@ menuConn = RunService.RenderStepped:Connect(function(dt)
 	menuLight.CFrame = CFrame.lookAt(origin, aim + Vector3.new(math.noise(t * 3, 2), math.noise(t * 3, 4), 0) * 0.6)
 
 	-- мигание
+	local flickerOn = Settings.get("flicker")
 	local on = not blackout
-	if settings.flicker and not blackout then
+	if flickerOn and not blackout then
 		if t > burstUntil and math.random() < dt * 0.5 then
 			burstUntil = t + 0.1 + math.random() * 0.45
 		end
@@ -331,16 +403,25 @@ menuConn = RunService.RenderStepped:Connect(function(dt)
 	spill.Enabled = on
 	spot.Brightness = 3.7 + math.noise(t * 6, 1) * 0.6
 	for _, b in ipairs(menuButtons) do
-		if t < burstUntil and settings.flicker then
+		if t < burstUntil and flickerOn then
 			b.TextTransparency = on and 0 or 0.65
 		elseif b.TextTransparency > 0.5 then
 			b.TextTransparency = 0
 		end
 	end
 
+	-- кинофокус на Пациенте: фон за ним мягко размыт
+	local root = menuMonster and menuMonster.Parent and menuMonster:FindFirstChild("HumanoidRootPart")
+	if root and root:IsA("BasePart") and root.Position.Y > -100 then
+		PostFX.setFocus((root.Position - cam.CFrame.Position).Magnitude)
+	else
+		PostFX.setFocus(40)
+	end
+
 	-- зерно/царапины
-	grain.Visible = settings.grain
-	if settings.grain then
+	local grainOn = Settings.get("grain")
+	grain.Visible = grainOn
+	if grainOn then
 		for _, s in ipairs(scratches) do
 			if math.random() < 0.15 then
 				s.Position = UDim2.fromScale(math.random(), 0)
@@ -485,6 +566,20 @@ local gateSub = UI.label({
 	Parent = gatePanel,
 })
 local _ = gateSub
+-- полоса отсчёта и места в очереди
+local gateBar = UI.new("Frame", {
+	Size = UDim2.new(1, -24, 0, 3),
+	Position = UDim2.new(0, 12, 1, -8),
+	BackgroundColor3 = Color3.fromRGB(30, 14, 14),
+	BorderSizePixel = 0,
+	Parent = gatePanel,
+})
+local gateFill = UI.new("Frame", {
+	Size = UDim2.fromScale(1, 1),
+	BackgroundColor3 = Colors.BrightRed,
+	BorderSizePixel = 0,
+	Parent = gateBar,
+})
 
 -- ============================ ОКНА ============================
 local windows = {}
@@ -950,59 +1045,15 @@ local function renderBP(scrollToCurrent)
 end
 
 -- ---------- НАСТРОЙКИ ----------
-local setWin = UI.window(gui, "НАСТРОЙКИ", UDim2.fromOffset(520, 380))
+local settingsMenu = SettingsMenu.build(gui, { footer = true })
+local setWin = settingsMenu.window
 table.insert(windows, setWin)
-local setList = UI.new("Frame", {
-	Size = UDim2.fromScale(1, 1),
-	BackgroundTransparency = 1,
-	Parent = setWin.content,
-}, { UI.new("UIListLayout", { Padding = UDim.new(0, 10), SortOrder = Enum.SortOrder.LayoutOrder }) })
-local function settingRow(order, labelText)
-	local row = UI.new("Frame", { Size = UDim2.new(1, 0, 0, 44), BackgroundTransparency = 1, LayoutOrder = order, Parent = setList })
-	UI.label({ Text = labelText, Font = UI.FontBold, TextSize = 18, Size = UDim2.new(0.55, 0, 1, 0), Parent = row })
-	return row
-end
-local musicRow = settingRow(1, "ГРОМКОСТЬ МУЗЫКИ")
-local musicValue = UI.label({ Text = "", Font = UI.FontMono, TextSize = 18, TextXAlignment = Enum.TextXAlignment.Center, Size = UDim2.fromOffset(70, 44), Position = UDim2.new(1, -150, 0, 0), Parent = musicRow })
-local function refreshSettings() end
-UI.button({ Text = "−", Size = UDim2.fromOffset(40, 40), Position = UDim2.new(1, -196, 0, 2), Parent = musicRow }, function()
-	settings.music = math.max(0, settings.music - 0.1)
-	applyVolumes()
-	refreshSettings()
-end)
-UI.button({ Text = "+", Size = UDim2.fromOffset(40, 40), Position = UDim2.new(1, -76, 0, 2), Parent = musicRow }, function()
-	settings.music = math.min(1, settings.music + 0.1)
-	applyVolumes()
-	refreshSettings()
-end)
-local grainRow = settingRow(2, "ЗЕРНО И ЦАРАПИНЫ")
-local grainBtn = UI.button({ Text = "", TextSize = 16, Size = UDim2.fromOffset(150, 40), Position = UDim2.new(1, -196, 0, 2), Parent = grainRow }, function()
-	settings.grain = not settings.grain
-	refreshSettings()
-end)
-local flickRow = settingRow(3, "МЕРЦАНИЕ СВЕТА В МЕНЮ")
-local flickBtn = UI.button({ Text = "", TextSize = 16, Size = UDim2.fromOffset(150, 40), Position = UDim2.new(1, -196, 0, 2), Parent = flickRow }, function()
-	settings.flicker = not settings.flicker
-	refreshSettings()
-end)
-local statsLabel = UI.label({
-	Text = "",
-	Font = UI.FontMono,
-	TextSize = 15,
-	TextColor3 = Colors.Dim,
-	Size = UDim2.new(1, 0, 0, 90),
-	LayoutOrder = 4,
-	TextYAlignment = Enum.TextYAlignment.Top,
-	Parent = setList,
-})
-refreshSettings = function()
-	musicValue.Text = math.floor(settings.music * 100 + 0.5) .. "%"
-	grainBtn.Text = settings.grain and "ВКЛ" or "ВЫКЛ"
-	flickBtn.Text = settings.flicker and "ВКЛ" or "ВЫКЛ"
+local function refreshSettings()
+	settingsMenu.refresh()
 	local d = ClientData.get() or {}
 	local s = d.stats or {}
-	statsLabel.Text = string.format(
-		"СТАТИСТИКА\nраундов: %d   побегов: %d   смертей: %d\nжетонов возрождения: %d",
+	settingsMenu.footer.Text = string.format(
+		"СТАТИСТИКА   раундов: %d   побегов: %d   смертей: %d\nжетонов возрождения: %d",
 		s.games or 0,
 		s.escapes or 0,
 		s.deaths or 0,
@@ -1043,20 +1094,19 @@ local function play()
 		menuConn:Disconnect()
 	end
 	stopTitle()
+	GuiService.SelectedObject = nil
 	menu.Visible = false
 	menuLight:Destroy()
 	if menuMonster then
 		menuMonster.Parent = nil -- только у тебя на экране
 	end
 	local cam = workspace.CurrentCamera
-	cam.CameraType = Enum.CameraType.Custom
-	cam.FieldOfView = 70
+	cam.FieldOfView = Settings.get("fov")
 	local char = player.Character or player.CharacterAdded:Wait()
 	local hum = char:WaitForChild("Humanoid")
-	cam.CameraSubject = hum
-	if controls then
-		controls:Enable()
-	end
+	local hrp = char:WaitForChild("HumanoidRootPart")
+	PostFX.setFocus(nil)
+	PostFX.setMotionBlurAllowed(true)
 	pcall(function()
 		StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, true)
 	end)
@@ -1066,22 +1116,81 @@ local function play()
 	applyVolumes()
 	if not fl then
 		fl = FL.start()
+		PostFX.exclude(fl.part)
+	end
+
+	-- пролёт камеры сверху к персонажу, полосы уезжают
+	local focusPoint = hrp.Position + Vector3.new(0, 1.5, 0)
+	local back = -hrp.CFrame.LookVector
+	local startCF = CFrame.lookAt(focusPoint + back * 4 + hrp.CFrame.RightVector * 7 + Vector3.new(0, 15, 0), focusPoint)
+	local endCF = CFrame.lookAt(focusPoint + back * 12 + Vector3.new(0, 3, 0), focusPoint)
+	cam.CameraType = Enum.CameraType.Scriptable
+	cam.CFrame = startCF
+	fadeTo(1, 1.3)
+	for _, bar in ipairs(letterbox) do
+		UI.tween(bar, 2.2, { Size = UDim2.new(1, 0, 0, 0) }, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut)
+	end
+	local swoop = TweenService:Create(cam, TweenInfo.new(2.4, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut), { CFrame = endCF })
+	swoop:Play()
+	swoop.Completed:Wait()
+	cam.CameraSubject = hum
+	cam.CameraType = Enum.CameraType.Custom
+	if controls then
+		controls:Enable()
 	end
 	hud.Visible = true
-	fadeTo(1, 1.3)
-	task.delay(1.5, function()
+	hud.Position = UDim2.fromOffset(0, 12)
+	UI.tween(hud, 0.6, { Position = UDim2.new() })
+	task.delay(0.6, function()
 		toast("Встань в светящийся круг у врат, чтобы попасть в больницу.", Colors.Text)
 		task.wait(1)
 		toast("Торговец в капюшоне — магазин. Доска объявлений — батлпасс. F — фонарик.", Colors.Dim)
 	end)
 end
 
-menuButton("ИГРАТЬ", 1, function()
+menuButton("ИГРАТЬ", 1, "Спустись в зал ожидания и встань у врат.\nДо 4 игроков в одной смене.", function()
 	task.spawn(play)
 end)
-menuButton("МАГАЗИН", 2, openShop)
-menuButton("БАТЛПАСС", 3, openBP)
-menuButton("НАСТРОЙКИ", 4, openSettings)
+menuButton("МАГАЗИН", 2, "Фонарики, титулы и наборы монет.", openShop)
+menuButton("БАТЛПАСС", 3, "Сезон «" .. BattlePass.SeasonName .. "»: награды за каждую смену.", openBP)
+menuButton("НАСТРОЙКИ", 4, "Звук, графика, камера и субтитры.", openSettings)
+
+-- выход с титульного экрана: любая клавиша / клик / касание / кнопка геймпада
+local function leaveTitle()
+	if not titleScreen then
+		return
+	end
+	titleScreen = false
+	Sound.play("UIClick", nil, { Volume = 0.8 })
+	UI.tween(pressAny, 0.25, { TextTransparency = 1 })
+	task.wait(0.25)
+	pressAny.Visible = false
+	buttonsHolder.Visible = true
+	for i, b in ipairs(menuButtons) do
+		b.TextTransparency = 1
+		task.delay(i * 0.09, function()
+			UI.tween(b, 0.45, { TextTransparency = 0 }, Enum.EasingStyle.Quint)
+		end)
+	end
+	if UserInputService.GamepadEnabled then
+		GuiService.SelectedObject = menuButtons[1]
+	end
+end
+UserInputService.InputBegan:Connect(function(input)
+	if not titleScreen then
+		return
+	end
+	local t = input.UserInputType
+	if t == Enum.UserInputType.Keyboard or t == Enum.UserInputType.MouseButton1 or t == Enum.UserInputType.Touch or t == Enum.UserInputType.Gamepad1 then
+		task.spawn(leaveTitle)
+	end
+end)
+-- геймпад подключили в меню — сразу даём выделение
+UserInputService.LastInputTypeChanged:Connect(function(t)
+	if inMenu and not titleScreen and t == Enum.UserInputType.Gamepad1 and not GuiService.SelectedObject then
+		GuiService.SelectedObject = menuButtons[1]
+	end
+end)
 
 for i, info in ipairs({ { "🛒 МАГАЗИН", openShop }, { "🩸 БАТЛПАСС", openBP }, { "⚙ НАСТРОЙКИ", openSettings } }) do
 	UI.button({
@@ -1181,6 +1290,7 @@ task.spawn(function()
 			local max = m:GetAttribute("Max") or Config.MaxPlayersPerRound
 			local left = m:GetAttribute("Time") or 0
 			gateTitle.Text = string.format("ВРАТА %s   ·   %d / %d   ·   ОТПРАВКА ЧЕРЕЗ %d", ROMAN[n] or tostring(n), count, max, left)
+			UI.tween(gateFill, 0.25, { Size = UDim2.fromScale(math.clamp(left / math.max(1, Config.QueueCountdown), 0, 1), 1) }, Enum.EasingStyle.Linear)
 			if left ~= lastTime then
 				lastTime = left
 				if left > 0 and left <= 5 then
